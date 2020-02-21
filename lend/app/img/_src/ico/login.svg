@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.455" height="37.043" viewBox="0 0 35.455 37.043">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#Path_68)}.cls-3{filter:url(#Path_67)}
+        </style>
+        <filter id="Path_67" width="27.521" height="28.315" x="3.967" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Path_68" width="35.455" height="25.138" x="0" y="11.905" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="single-01">
+        <g class="cls-3">
+            <path id="Path_67-2" d="M10.761 10.315a4.765 4.765 0 0 0 4.761-4.761v-.793a4.761 4.761 0 1 0-9.522 0v.793a4.765 4.765 0 0 0 4.761 4.761z" class="cls-1" data-name="Path 67" transform="translate(6.97 6)"/>
+        </g>
+        <g class="cls-2">
+            <path id="Path_68-2" d="M15.537 15.779a22.152 22.152 0 0 0-11.619 0A3.987 3.987 0 0 0 1 19.607v2.535h17.456v-2.535a3.987 3.987 0 0 0-2.919-3.828z" class="cls-1" data-name="Path 68" transform="translate(8 2.9)"/>
+        </g>
+    </g>
+</svg>

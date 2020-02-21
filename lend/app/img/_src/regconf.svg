@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="871.375" height="703.221" viewBox="0 0 871.375 703.221">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:#a5622a}.cls-2{fill:#fff}.cls-3{clip-path:url(#clip-path)}.cls-4{stroke:#a5622a}.cls-5,.cls-6,.cls-7{fill:#f8d496}.cls-6{font-size:48px;font-family:MyanmarMN-Bold,Myanmar MN;font-weight:700}.cls-7{font-size:19px;font-family:MyanmarMN,Myanmar MN;letter-spacing:.1em}.cls-8{filter:url(#Rectangle_11)}.cls-9{filter:url(#Rectangle_1169)}.cls-10{filter:url(#Rectangle_253)}
+        </style>
+        <filter id="Rectangle_253" width="871.375" height="703.221" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_1169" width="871.375" height="703.221" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".451"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_11" width="383" height="527" x="15.494" y="23.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path"/>
+    </defs>
+    <g id="Group_3386" data-name="Group 3386" transform="translate(9 6)">
+        <g class="cls-9" transform="translate(-9 -6)">
+            <rect id="Rectangle_1169-2" width="853.375" height="685.22" class="cls-1" data-name="Rectangle 1169" rx="28" transform="translate(9 6)"/>
+        </g>
+        <g id="Group_3385" data-name="Group 3385">
+            <g class="cls-8" transform="translate(-9 -6)">
+                <rect id="Rectangle_11-2" width="365" height="509" class="cls-2" data-name="Rectangle 11" rx="20" transform="translate(24.49 29.78)"/>
+            </g>
+            <g id="Group_503" data-name="Group 503">
+                <g id="Mask_Group_3" class="cls-3" data-name="Mask Group 3">
+                    <path id="Path_111" d="M413.983-9.418v1055.635s210.241 1.52 319.652-51.169c131.579-63.364 378.877-2.344 753.454-109.464s135.271-398.81 135.271-398.81V-20.285z" class="cls-4" data-name="Path 111" transform="translate(-643.148 -161.837)"/>
+                    <path id="Path_112" d="M407.6 509.1s97.791-78.4 327.77-150.882 343.664-47.145 490.589-79.914 280.955-120.917 80.017-196.977S422.2-25.934 422.2-25.934z" class="cls-5" data-name="Path 112" transform="translate(-651.695 -163.793)"/>
+                </g>
+            </g>
+        </g>
+        <text id="Activate_complete" class="cls-6" data-name="Activate complete" transform="translate(426.303 349.78)">
+            <tspan x="-221.168" y="0">Activate complete</tspan>
+        </text>
+        <text id="You_can_now_log_in_to_BFF_Online" class="cls-7" data-name="You can now log in to BFF Online" transform="translate(427.019 414.78)">
+            <tspan x="-174.228" y="0">You can now log in to BFF Online</tspan>
+        </text>
+    </g>
+</svg>

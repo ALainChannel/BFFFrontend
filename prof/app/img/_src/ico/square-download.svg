@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="square-download" width="53.898" height="53.898" viewBox="0 0 53.898 53.898">
+    <defs>
+        <style>
+            .cls-1{fill:#f8d496}
+        </style>
+    </defs>
+    <path id="Path_910" d="M2.172 35A1.172 1.172 0 0 0 1 36.172v11.717a1.172 1.172 0 0 0 1.172 1.171h51.554a1.172 1.172 0 0 0 1.174-1.171V36.172a1.172 1.172 0 1 0-2.343 0v10.545H3.343V36.172A1.172 1.172 0 0 0 2.172 35z" class="cls-1" data-name="Path 910" transform="translate(-1 4.838)"/>
+    <path id="Path_911" d="M38.949 26.777H28.4V2.172A1.172 1.172 0 0 0 27.232 1h-2.343a1.172 1.172 0 0 0-1.172 1.172v24.605H13.172a1.172 1.172 0 0 0-.921 1.9l12.889 16.4a1.172 1.172 0 0 0 1.842 0l12.889-16.4a1.172 1.172 0 0 0-.921-1.9z" class="cls-1" data-name="Path 911" transform="translate(.889 -1)"/>
+</svg>

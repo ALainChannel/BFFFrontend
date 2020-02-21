@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="barcode-qr" width="12.956" height="12.956" viewBox="0 0 12.956 12.956">
+    <defs>
+        <style>
+            .cls-1{fill:#f9b034}.cls-2{fill:#703c16}
+        </style>
+    </defs>
+    <path id="Path_2333" d="M4.859 5.668H.81A.765.765 0 0 1 0 4.859V.81A.765.765 0 0 1 .81 0h4.049a.765.765 0 0 1 .81.81v4.049a.765.765 0 0 1-.81.809zM1.62 4.049h2.429V1.62H1.62z" class="cls-1" data-name="Path 2333"/>
+    <path id="Path_2334" d="M4.859 14.668H.81a.765.765 0 0 1-.81-.81V9.81A.765.765 0 0 1 .81 9h4.049a.765.765 0 0 1 .81.81v4.049a.765.765 0 0 1-.81.809zM1.62 13.049h2.429V10.62H1.62z" class="cls-1" data-name="Path 2334" transform="translate(0 -1.712)"/>
+    <path id="Path_2335" d="M13.859 5.668H9.81A.765.765 0 0 1 9 4.859V.81A.765.765 0 0 1 9.81 0h4.049a.765.765 0 0 1 .81.81v4.049a.765.765 0 0 1-.81.809zM10.62 4.049h2.429V1.62H10.62z" class="cls-1" data-name="Path 2335" transform="translate(-1.712)"/>
+    <path id="Rectangle_728" d="M0 0h.81v.81H0z" class="cls-2" data-name="Rectangle 728" transform="translate(2.429 2.429)"/>
+    <path id="Rectangle_729" d="M0 0h.81v.81H0z" class="cls-2" data-name="Rectangle 729" transform="translate(2.429 9.717)"/>
+    <path id="Rectangle_730" d="M0 0h5.668v1.62H0z" class="cls-2" data-name="Rectangle 730" transform="translate(7.288 11.337)"/>
+    <path id="Path_2336" d="M15.049 12.239h-1.62V10.62H11V9h3.239a.765.765 0 0 1 .81.81z" class="cls-2" data-name="Path 2336" transform="translate(-2.093 -1.712)"/>
+    <path id="Rectangle_731" d="M0 0h.81v.81H0z" class="cls-2" data-name="Rectangle 731" transform="translate(9.717 9.717)"/>
+    <path id="Rectangle_732" d="M0 0h.81v.81H0z" class="cls-2" data-name="Rectangle 732" transform="translate(9.717 2.429)"/>
+</svg>

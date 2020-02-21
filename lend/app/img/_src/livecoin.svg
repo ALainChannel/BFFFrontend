@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175.916" height="34.047" viewBox="0 0 175.916 34.047">
+    <defs>
+        <style>
+            .cls-1,.cls-5{fill:#fff}.cls-1{font-size:20px;font-family:GillSans-SemiBold,Gill Sans;font-weight:600;letter-spacing:.228em}.cls-2{fill:#8bd8f8}.cls-3{fill:none}.cls-4,.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_3592" data-name="Group 3592" transform="translate(-17601 -3400)">
+        <text id="LIVECOIN" class="cls-1" transform="translate(17649.916 3423.358)">
+            <tspan x="0" y="0">LIVE</tspan><tspan y="0" class="cls-2">COIN</tspan>
+        </text>
+        <g id="Path_5146" class="cls-3" data-name="Path 5146">
+            <path d="M17.024 0A17.024 17.024 0 1 1 0 17.024 17.024 17.024 0 0 1 17.024 0z" class="cls-4" transform="translate(17601 3400)"/>
+            <path d="M17.024 2A14.925 14.925 0 0 0 6.4 6.4 14.925 14.925 0 0 0 2 17.024c0 4.012 1.563 7.785 4.4 10.623a14.925 14.925 0 0 0 10.624 4.4c4.012 0 7.785-1.563 10.623-4.4a14.925 14.925 0 0 0 4.4-10.623c0-4.013-1.563-7.786-4.4-10.624A14.925 14.925 0 0 0 17.024 2m0-2c9.401 0 17.023 7.622 17.023 17.024 0 9.401-7.622 17.023-17.023 17.023C7.622 34.047 0 26.425 0 17.024 0 7.622 7.622 0 17.024 0z" class="cls-5" transform="translate(17601 3400)"/>
+        </g>
+        <path id="Path_5141" d="M2.678 0v13.133H0V1.976z" class="cls-2" data-name="Path 5141" transform="translate(17619.998 3409.563)"/>
+        <path id="Path_5142" d="M2.678 0v10.2H0V1.945z" class="cls-2" data-name="Path 5142" transform="translate(17616.172 3412.495)"/>
+        <path id="Path_5143" d="M2.678 0v7.268H0v-5.4z" class="cls-2" data-name="Path 5143" transform="translate(17612.346 3415.428)"/>
+    </g>
+</svg>

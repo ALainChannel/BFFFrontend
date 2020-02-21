@@ -1,0 +1,3525 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+ 
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font,AvenirNext,sans-serif
+	overflow-x: hidden
+	color: $text
+	background-image: url(../img/_src/bg.svg)
+	background-size: cover
+	background-repeat: no-repeat
+	input, textarea
+		border:  none
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 100%
+	color: #fff
+	display: inline-flex
+	&:hover
+		border: 0
+		color: #fff
+		text-decoration: none
+
+
+.said-bar
+	color: #000
+	width: 18%
+	height: 100vh
+	background: #333
+	
+
+
+.avatar
+	position: relative
+	margin-bottom: 10px
+	&-img
+		width:	150px
+		height: 150px
+		background:#444
+		border-radius: 100%
+		position: absolute
+		left: 20%
+		margin-bottom: 10px
+
+
+
+.conteiner
+	display: flex
+	align-items: center
+	height: 100vh
+	justify-content: center
+	
+ul,li
+	list-style: none
+	padding: 0
+	margin: 0
+
+
+
+
+
+// \::-webkit-scrollbar-button
+//   background-image: url('')
+//   background-repeat: no-repeat
+//   width: 6px
+//   height: 0px
+
+// \::-webkit-scrollbar-track
+//   border-radius: 10px
+//   margin: 10px 5px
+//   background-color: #a58a73
+//   background-color: rgba(117, 190, 218, 0.0)
+	
+
+// \::-webkit-scrollbar-thumb
+//   border-radius: 10px
+//   background-color: #ffcb17
+//   box-shadow: 0px 1px 1px #fff inset
+//   background-image: radial-gradient(ellipse farthest-corner at center center, rgb(190, 104, 38) 0%, rgb(112, 60, 22) 74.8%)
+//   background-position: center
+//   background-repeat: no-repeat
+
+// ::-webkit-scrollbar
+// 	width: 15px
+// 	background-color: rgba(117, 190, 218, 0.0)	
+// Battons
+
+.btn
+	border-radius: 30px
+	color: rgba(249,176,52,0.8)
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.43)
+	padding: 4px 20px
+	background-image: linear-gradient(to bottom, #703c16, #a5622b)
+
+.up-arr
+	display: flex
+	&:before
+		content: ''
+		background-image: url(../img/_src/ico/arrow-up.svg) 
+		background-repeat: no-repeat
+		width: 7px
+		margin-bottom: 3px
+		height: 10.5px
+		display: block
+		background-size: cover
+		display: flex
+		align-self: center
+		margin-right: 7px
+// Battons end 
+
+
+.head
+
+	.top-head
+		display: flex
+		padding-top: 20px
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 20px
+	.logo
+		display: inline-flex
+
+.nav-menu
+	display: flex
+	.active
+		position: relative
+		h3
+			color: #000
+		&:before
+			position: absolute
+			content: ""
+			width: 8px
+			height: 8px
+			display: flex
+			background-color: #f9b034	
+			border-radius: 50%
+			bottom: 0
+			right: 50%
+	.nav-items
+		padding: 0 20px
+		&:hover
+			h3
+				color: #371f18
+				transition: color ease 0.5s
+
+	h3
+		font-size: 22px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: -1.1px
+		text-align: left
+		color: #a5622b
+		padding-top: 10px
+
+
+.btn-sing
+	height: 40px
+	font-size: 16px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1
+	text-align: left
+	color: #ffffff
+	display: flex
+	justify-content: center
+	border-radius: 27px
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #95613b, #703c16)
+	transition: all ease 0.5s
+	transition-delay: .5s
+	&:hover
+		background-image: linear-gradient(to bottom,#95613b,#8e4f20)
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.40)
+		transition-delay: .5s
+	&:active
+		background-image: linear-gradient(to bottom,#95613b,#5d3111)
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	a
+		display: flex
+		align-items: center
+	h3
+		margin: 0
+	.btn-arr
+		&:before	
+			content: ''
+			background-image: url(../img/_src/ico/arrow.svg) 
+			background-repeat: no-repeat
+			display: inline-block
+			z-index: 1
+			background-size: contain
+			width: 17px
+			height: 11px
+			margin-right: 10px
+			margin-top: 0
+
+
+.selectlang
+	border-radius: 31px
+	border:	1px solid #a58a73
+	padding: 6px 8px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: left
+	color: #703c16
+	background-color: transparent
+	&:focus
+		outline: none
+	option
+		border-radius: 10px 20px
+
+.mainhead
+	height: 850px
+	background: #333
+	border-radius: 31px
+	background-color: #371f18
+	color: #fff
+	position: relative
+	margin-bottom: 250px
+	display: flex
+	opacity: 1
+	transition: opacity 1s
+	.title-box
+		align-self: center
+		margin-left: 100px
+		z-index: 2
+		.btn-main
+			width: auto
+			display: inline-block
+			justify-content: center
+			align-items: center
+			border-radius: 27px
+			border: solid 1px rgba(249, 176, 52, 0.16)
+			background-image: linear-gradient(to bottom, #c3b3a7, #a58a73)
+			&:hover
+				background-image: linear-gradient(to bottom,#c3b3a7,#d0b49c)
+			&:active
+				background-image: linear-gradient(to bottom,#c3b3a7,#86705d)	
+			h3
+				margin: 0
+				padding: 1px 20px
+				font-size: 27px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.41
+				letter-spacing: 1.35px
+				text-align: center
+				color: #ffffff
+			a
+				display: block
+				z-index: 100
+		.bitcoff
+			margin-bottom: 25px
+		p
+			font-size: 26px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.24
+			letter-spacing: normal
+			text-align: left
+			color: #ffffff
+			width: 480px
+			margin-bottom: 30px
+	&:after
+		position: absolute
+		content: ''
+		width: 850px
+		height: 100%
+		top: 0
+		background-image: url(../img/_src/head-l.svg) 
+		background-repeat: no-repeat
+		display: block
+		z-index: 1
+		background-size: contain
+	&:before
+		position: absolute
+		content: ''
+		bottom: 40px
+		left: 0
+		width: 233px
+		height: 70px
+		background-image: url(../img/_src/ico/bitbacksys.svg) 
+		background-repeat: no-repeat
+		display: block
+		z-index: 5
+		background-size: contain
+.box-cont
+	position: absolute
+	height: 118%
+	width: 500px
+	border-radius: 31px
+	box-shadow: -5px 0 6px 0 rgba(0, 0, 0, 0.59)
+	background-color: #251918
+	z-index: 2
+	right: 0
+	background-image: url(../img/_src/ico/uzor.svg)
+	background-size: contain
+	.desckrip-bff
+		position: absolute
+		top: 37%
+		left: 82px
+		width: 300px
+		display: block
+		font-family: roboto-example
+		font-size: 11.7px
+		font-weight: 300
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.2
+		letter-spacing: normal
+		text-align: left
+		color: #b7a991
+		opacity: 0.8
+	&:before
+		position: absolute
+		content: ''
+		width: 750px
+		height: 650px
+		background-image: url(../img/_src/ico/coinsys.svg) 
+		background-repeat: no-repeat
+		display: block
+		z-index: 3
+		background-size: cover
+		right: 150px
+		top: 15%
+		background-position-x: center
+
+
+
+
+
+.newyear
+	&:before
+		position: absolute
+		content: ''
+		bottom: 2px
+		left: 7px
+		width: 233px
+		height: 100px
+		background-image: url(../img/_src/elka.svg)
+		background-repeat: no-repeat
+		display: block
+		z-index: 5
+		background-size: contain
+	&:after
+		background-image: url(../img/_src/happynewyear.svg) 
+	.title-box
+		width: 500px
+	.newyeraact
+		font-family: sans-serif
+		font-size: calc(0.5rem + 2vw)
+		font-weight: bold
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.36
+		letter-spacing: -2.2px
+		text-align: center
+		color: #ffffff
+	.happy-size
+		max-width: 430px
+		width: 90%
+	.bitcoff
+		display: flex
+		flex-direction: column
+		text-align: center
+		align-items: center
+	.happy-count
+		align-self: center
+		font-size: calc(0.5rem + 3vw)
+		font-weight: 900
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.19
+		letter-spacing: normal
+		text-align: left
+		font-family: sans-serif
+		border-bottom: 2px solid #fff
+	.happy-count-title
+		font-size: calc(0.3rem + .7vw)
+		font-weight: normal
+		font-stretch: normal
+		font-family: sans-serif
+		font-style: normal
+		line-height: 1.38
+		letter-spacing: 0.7px
+		padding: 0 40px
+		text-align: left
+		color: #ffffff
+	.green-btn
+		align-self: flex-start
+		margin-left: 35px
+		margin-top: 40px
+		padding: 30px 25px
+		border-radius: 39px
+		border: solid 1px #e1ba66
+		background-image: linear-gradient(to bottom, #7fa14d, #47674d)
+		h3
+			padding: 20px
+			font-size: calc(0.5rem + 1vw)
+			font-family: sans-serif
+			letter-spacing: 0.7px
+	.happy-text
+		font-weight: bold
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.2
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+		font-family: sans-serif
+		font-size: calc(0.1rem + 1vw)
+		letter-spacing: 1.5px
+		width: 84%
+		padding: 20px 0
+	.selecact
+		font-weight: normal
+		line-height: 1.6
+		padding: 0	
+	.happy-date
+		position: absolute
+		bottom: 5px
+		font-family: sans-serif
+	.happy-size-sale
+		align-self: center
+	.img-happy-back	
+		text-align: center
+		display: flex
+		flex-direction: column
+		font-size: 22px
+		font-weight: 500
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.22
+		letter-spacing: 0.46px
+		text-align: center
+		color: #f8d496
+		text-transform: uppercase
+		font-family: sans-serif
+	.more-coffe
+		margin-left: -15px
+
+
+
+
+
+.livecoin
+	font-family: AvenirNext
+	&:after
+		background-image: url(../img/_src/bg-livecoin.svg) 
+	&:before
+		background-image: url(../img/_src/partners/5.svg)
+		bottom: 15px
+		left: 30px
+		width: 233px
+		height: 100px 
+	.title-box
+		width: 500px	
+	.title-livecoin
+		font-family: AvenirNextBold
+		font-size: calc(0.3rem + 2vw)
+		font-weight: bold
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.25
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+	.dec-livecoin
+		font-family: AvenirNext
+		font-size: calc(0.2rem + .9vw)
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.37
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+	.box-qr-livecoin
+		position: relative
+		width: 350px
+		height: 350px
+		margin: 20px 30px
+		transition: all ease .5s
+		img
+			position: absolute
+			width: 100%
+			height: 100%
+		.qrlivecon
+			z-index: 2
+			transition: all ease .5s	
+		&:hover
+			transition: all ease .5s
+			.qrlivecon
+				opacity: 0
+	.soc-btn-livecoin
+		display: flex
+		justify-content:	space-around
+		padding-right: 55px
+		margin: 0 45px
+		margin-bottom: 50px
+		.itm-soc-live
+			width: 54px
+			height: 51px
+			border-radius: 16px
+			box-shadow: -5px -5px 12px 0 rgba(255, 255, 255, 0.33)
+			background-color: #f9b034
+			position: relative
+			&:before
+				content: ''
+				width: 100%
+				height: 100%
+				display: block
+				position: absolute
+				top: 0
+				border-radius: 16px
+				box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.33)	
+		.app-livecoin,.play-livecoin,.inst-livecoin
+			transition: all ease .5s
+			z-index: 5
+			&:hover
+				background-color: #79520f
+				transition: all ease .5s
+		.app-livecoin
+			background-repeat: no-repeat
+			background-position: center
+			background-color: #de8c01
+			mask: url(../img/_src/soc/live-apple-logo.svg) no-repeat 50% 50%
+
+		.play-livecoin
+			background-color: #de8c01
+			mask: url(../img/_src/soc/live-google-play.svg) no-repeat 50% 50%
+			background-repeat: no-repeat
+			background-position: center
+		.inst-livecoin
+			background-color: #de8c01
+			mask: url(../img/_src/soc/live-instagram.svg) no-repeat 50% 50%
+			background-repeat: no-repeat
+			background-position: center
+
+.sale
+	&:after
+		background-image: url(../img/_src/bg-sale.svg) 
+	.happy-size
+		max-width: 430px
+		width: 90%
+	.bitcoff
+		display: flex
+		flex-direction: column
+		text-align: center
+		align-items: center
+	.happy-count
+		align-self: center
+		font-size: calc(0.5rem + 3vw)
+		font-weight: 900
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.19
+		letter-spacing: normal
+		text-align: left
+		color: #7d4516
+		font-family: sans-serif
+	.happy-count-title
+		font-size: calc(0.5rem + 1vw)
+		font-weight: 700
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.17
+		letter-spacing: normal
+		text-align: center
+		color: #7d4516
+		font-family: sans-serif
+		text-transform: uppercase
+	.happy-text
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.2
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+		font-family: sans-serif
+		text-transform: uppercase
+		font-size: calc(0.3rem + .5vw)
+		max-width: 340px
+		width: 100%
+		padding: 20px 0
+	.happy-date
+		position: absolute
+		bottom: 5px
+		font-family: sans-serif
+	.happy-size-sale
+		align-self: center
+	.img-happy-back	
+		text-align: center
+		display: flex
+		flex-direction: column
+		font-size: 22px
+		font-weight: 500
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.22
+		letter-spacing: 0.46px
+		text-align: center
+		color: #f8d496
+		text-transform: uppercase
+		font-family: sans-serif
+	.more-coffe
+		margin-left: -15px
+.box-item
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	min-height: 85vh
+	width: 100%
+	background-image: url(../img/_src/ico/uzor.svg)
+	border-radius: 31px
+	box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+	background-position-x: center
+	background-size: contain
+	color: #fff
+	padding: 20px
+	margin-bottom: 30px
+	position: relative
+	&:after
+		position: absolute
+		background-image: url(../img/_src/ico/bitgrey.svg)
+		width: 40px
+		display: block
+		content: ""
+		background-size: contain
+		height: 40px
+		background-repeat: no-repeat
+		left: 20px
+		bottom: 20px
+	.item-logo
+		height: 270px
+		width: 325px
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		margin-top: 80px
+	.item-title
+		display: flex
+		flex-direction: column
+		margin-bottom: auto
+		min-height: 100%
+	.btn-card
+		display: flex
+		width: 260px
+		height: 55px
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+		border-radius: 27px
+		background-image: linear-gradient(to bottom, #95613b, #703c16)
+		&:hover
+			background-image: linear-gradient(to bottom,#95613b,#985829)
+		&:active
+			background-image: linear-gradient(to bottom,#845532,#48260d)	
+
+		h3
+			margin: 0
+			font-size: 27px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: 1.35px
+			text-align: center
+			color: #ffffff
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+	.title-names
+		font-size: calc(1.5rem + 1.5vw)
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		margin: calc(0.5rem + 1vw) 0
+	.desc-coffee
+		font-size: 20px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		margin-bottom: 10px
+		min-height: 250px
+		max-height: 250px
+		height: 100%	
+	.spanning-coffee
+		font-size: calc(5px + 1vw)
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: center
+		color: #f9b034	
+		min-height: 100%
+		margin-bottom: 20px
+
+.inv
+	background-color: #2d191a
+.mage
+	background-color: #251918
+.resep
+	background-color: #371f18
+
+
+.rangs
+	margin-bottom: 100px	
+.video
+	height: 100vh
+	margin-bottom: 100px	
+	.box-video
+		height: 100%
+		border-radius: 31px
+		box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+		background-color: #2d191a
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		position: relative
+		&:after
+			content: ""
+			background-image: url(../img/_src/ico/uzor.svg)
+			width: 600px
+			height: 600px
+			position: absolute
+			background-size: contain
+			bottom: 0
+			left: 0
+			z-index: 1
+		&:before
+			content: ""
+			background-image: url(../img/_src/ico/uzor.svg)
+			width: 600px
+			height: 600px
+			position: absolute
+			background-size: contain
+			top: 0
+			right: 0
+			z-index: 1
+.videov
+	border-radius: 22px
+	z-index: 3
+	width: 1200px
+	
+video:focus
+	border: none
+	outline: none
+
+
+
+
+
+.radio
+	height: 20vh	
+	.box-radio
+		height: 100%
+		border-radius: 31px
+		box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+		background-color: #2d191a
+		display: flex
+		justify-content: space-between
+		align-items: center
+		overflow: hidden
+		position: relative
+		&:after
+			position: absolute
+			background-image: url(../img/_src/ico/bitgrey.svg)
+			width: 50px
+			display: block
+			content: ""
+			background-size: contain
+			height: 50px
+			background-repeat: no-repeat
+			right: 20px
+			bottom: 20px
+.videov
+	border-radius: 22px
+	z-index: 3
+	width: 1200px
+	
+video:focus
+	border: none
+	outline: none
+
+.player-radio
+	padding: 0 15px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-around
+	
+.volume-radio
+	width: 70%
+	display: flex
+
+.interective-soung
+	max-width: 900px
+	width: 100%
+	background: url(../img/_src/image-soung.png) no-repeat
+	height: 100%
+	background-size: cover
+	background-position:  center
+
+.btn-radio
+	background: url(../img/_src/ico/Play.svg) no-repeat
+	width: 60px
+	height: 70px
+	background-size: contain
+	transition: all ease .2s
+.pause
+	background: url(../img/_src/ico/Pause.svg) no-repeat
+	background-size: contain
+	transition: all ease .2s
+
+.logo-radoi
+	margin-left: 30px
+
+.slider-color
+	-webkit-appearance: none
+	width: 100%
+	height: 20px
+	border-radius: 30px
+	background: #fff
+	outline: none
+	opacity: 1
+	-webkit-transition: .2s
+	transition: opacity .2s
+
+
+.slider-color::-webkit-slider-thumb 
+	-webkit-appearance: none
+	appearance: none
+	width: 25px
+	height: 25px
+	box-sizing: content-box
+	border-radius: 50%
+	border: 7px solid #fff
+	background: #2d191a
+	cursor: pointer
+
+
+.slider-color::-moz-range-thumb 
+	width: 25px
+	height: 25px
+	border-radius: 50%
+	border: 7px solid #fff
+	background: #2d191a
+	cursor: pointer
+
+
+
+
+
+
+
+
+
+
+.watleft
+	&:before
+		position: absolute
+		background-image: url(../img/_src/ico/stickgrey.svg)
+		width: 80px
+		display: block
+		content: ""
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		transform: rotate(180deg)
+		left: 0
+		bottom: 30px
+
+.watright
+	&:before
+		position: absolute
+		background-image: url(../img/_src/ico/stickgrey.svg)
+		width: 80px
+		display: block
+		content: ""
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		right: 0
+		top: 30px
+	&:after
+		position: absolute
+		background-image: url(../img/_src/ico/bitgrey.svg)
+		width: 50px
+		display: block
+		content: ""
+		background-size: contain
+		height: 50px
+		background-repeat: no-repeat
+		right: 20px
+		bottom: 20px
+
+
+.app-box
+	height: 100vh
+	min-height: 700px
+	width: 100%
+	display: flex
+	position: relative
+	align-items: center
+	margin-bottom: 100px
+	.box-mob
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100%
+		width: 26%
+		border-radius: 31px
+		backdrop-filter: blur(28.4px)
+		box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+		background-color: #371f18
+		z-index: 3
+		&:before
+			content: ""
+			background-image: url(../img/_src/ico/uzor.svg)
+			width: 100%
+			height: 100%
+			position: absolute
+			background-size: contain
+			top: 0
+			right: 0
+			z-index: 1
+		img
+			max-width: 300px
+			width: 100%
+			max-height: 700px
+			z-index: 2
+.box-applikat
+	color: #fff
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 80%
+	border-radius: 31px
+	box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+	background-color: #2d191a
+	position: relative
+	&:before
+		position: absolute
+		background-image: url(../img/_src/ico/stickgrey.svg)
+		width: 80px
+		display: block
+		content: ""
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		right: 0
+		top: 30px
+	&:after
+		position: absolute
+		background-image: url(../img/_src/ico/bitgrey.svg)
+		width: 50px
+		display: block
+		content: ""
+		background-size: contain
+		height: 50px
+		background-repeat: no-repeat
+		right: 20px
+		bottom: 20px
+	.appl
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-left: 192px
+	h3
+		font-size: 53px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+	p
+		font-size: 23px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.39
+		letter-spacing: 1.08px
+		text-align: center
+		color: #ffffff
+.btn-download
+	display: flex
+	width: 560px
+	justify-content: space-between
+	.btn-i
+		margin: 95px 0
+	img
+		width: 250px		
+.elem
+	display: flex
+	li
+		margin: 0 20px
+	a
+		img
+			width: 80px	
+
+
+//partners
+
+.owl-item
+	display: flex
+	justify-content: center
+
+.logoparnter
+	margin-bottom: 50px
+
+.owl-nav
+	position: absolute
+	top: 28%
+	width: 100%
+	font-size: 40px
+	opacity: 0.5
+.owl-next
+	right: 0
+	position: absolute
+.partners
+	height: 100%
+	min-height: 700px
+	width: 100%
+	display: flex
+	position: relative
+	align-items: center
+	margin-bottom: 100px
+.box-partners
+	color: #fff
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 80%
+	border-radius: 31px
+	box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+	background-color: #2d191a
+	position: relative
+	padding: 70px 0
+	&:before
+		position: absolute
+		background-image: url(../img/_src/ico/stickgrey.svg)
+		width: 80px
+		display: block
+		content: ""
+		background-size: contain
+		height: 400px
+		background-repeat: no-repeat
+		right: 0
+		top: 30px
+	&:after
+		position: absolute
+		background-image: url(../img/_src/ico/bitgrey.svg)
+		width: 50px
+		display: block
+		content: ""
+		background-size: contain
+		height: 50px
+		background-repeat: no-repeat
+		right: 20px
+		bottom: 20px
+	.appl
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 50px
+	h3
+		font-size: 53px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+	p
+		font-size: 23px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.39
+		letter-spacing: 1.08px
+		text-align: center
+		color: #ffffff
+
+.item-partner
+	height: 370px
+	background-color: #fff
+	border-radius: 10px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	margin-bottom: 30px
+
+.logo-partner
+	padding: 20px 10px
+	display: flex
+	justify-content: center
+	
+.picture-part
+	max-width: 100%
+	max-height: 100%
+	display: none	
+.btn-partner
+	padding: 10px
+	
+.btn-item-part
+	background-color: #e4e4ee
+	margin: 10px 0
+	border-radius: 6px
+	opacity: 0.2
+	background-image: linear-gradient(to bottom, #251918, #000000)
+.partner-butt
+	justify-content: center
+	font-size: 20px
+	font-weight: normal
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.6
+	letter-spacing: normal
+	text-align: center
+	color: #dcd2bd
+.serch-partners
+	display: flex
+	flex-direction: column
+
+.serch-part
+	font-size: 25px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.4
+	letter-spacing: -0.6px
+	text-align: center
+	color: #2e1a1a
+
+.free-lot
+	font-size: 20px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.4
+	letter-spacing: normal
+	text-align: center
+	color: #dbd0ba
+
+.no-img-part
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	align-self: center
+	border: dashed 1px #2e1a1a
+	margin: 10px
+	display: flex
+	position: relative
+	justify-content: center
+	align-items: center
+	&:before
+		content: '?'
+		opacity: 0.4
+		font-size: 60px
+		font-weight: 900
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.2
+		letter-spacing: -1.4px
+		text-align: center
+		color: #2e1a1a
+		
+
+
+.act-part
+	.btn-item-part
+		opacity: 1
+	.serch-partners
+		display: none	
+	.picture-part
+		display: block	
+.foot-bottom
+	display: flex
+	// align-items: center
+	justify-content: space-between
+	// margin-bottom: 50px
+	.socual
+		margin-left: 80px
+		display: flex
+		li
+			margin-right: 25px
+			a
+				height: 55%
+	h4
+		margin: 0
+		margin-right: 80px
+		font-size: 22px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: -1.1px
+		text-align: left
+		color: #703c16		
+
+
+
+//maps
+
+.mapscofee
+	height: 100%
+	min-height: 700px
+	width: 100%
+	display: flex
+	position: relative
+	align-items: center
+	margin-bottom: 100px
+
+.box-maps
+	color: #fff
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 60%
+	border-radius: 31px
+	box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+	background-color: #2d191a
+	position: relative
+	overflow: hidden
+
+// foot-head
+.foot-head
+	margin: 0 65px
+	border-top: 1px solid #bfbfbf
+	padding: 35px 0 65px
+	.link-foot-logo
+		font-size: 22px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 2
+		letter-spacing: -1.1px
+		text-align: left
+		color: #a5622b
+		&:hover
+			color: #000
+
+	
+// foot-head
+
+// Section team
+.wraptitle-team
+	margin-top: 40px
+	margin-left: 15px
+	margin-right: 15px
+	width: 100%
+	border-bottom: 1px solid #bfbfbf
+
+.span-team
+  font-size: 1.8em
+  font-weight: bold
+  font-stretch: normal
+  font-style: normal
+  line-height: 2
+  letter-spacing: normal
+  text-align: left
+  color: #251918
+  padding-top: 30px
+  margin-left: 15px
+  margin-right: 15px
+
+
+.img-team
+	width: 100%
+	height: 200px
+	border-radius: 9px
+	border: solid 1px #a58a73
+	margin-bottom: 20px	
+	overflow: hidden
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: #a7520d
+		opacity: .1
+.picture-team
+	object-fit: cover
+	height: 100%
+	width: 100%
+	
+.name-team
+  font-size: 20px
+  font-weight: bold
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.42
+  letter-spacing: normal
+  text-align: left
+  color: #f9b034
+  margin: 0
+
+.position-team
+  font-size: 18px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.42
+  letter-spacing: normal
+  text-align: left
+  color: #251918
+
+.soc-linck-team
+	font-size: 16px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.44
+	letter-spacing: normal
+	text-align: left
+	color: #7fd4fb
+	text-decoration: underline
+	margin-bottom: 30px
+	&:hover
+		color: #1db6fa
+// Section team end
+
+
+// Section 404
+
+.error
+	width: 100%
+	height: 80vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	img
+		width: 100%
+		height: 574px
+	h2
+		font-size: 40px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.43
+		letter-spacing: normal
+		text-align: center
+		color: #371f18
+		margin-bottom: 10px
+		margin-top: 20px
+
+// Section 404 end
+
+// Section Support	
+
+.support
+	width: 97%
+	height: 750px
+	margin-left: 40px
+	padding: 60px 100px
+	padding-top: 52px
+	box-shadow: 3px 3px 6px 0 rgba(0,0,0,.62)
+	background-color: #2d191a
+	border-radius: 31px
+	margin-bottom: 20px
+	position: relative
+	.wrapform
+		width: 540px
+		display: flex
+		flex-direction: column
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			background-image: url(../img/_src/ico/suppurtimg.svg)
+			right: 100px
+			height: 86%
+			width: 100%
+			max-width: 600px
+			background-size: contain
+			background-repeat: no-repeat
+			z-index: 1
+	.title
+		margin-bottom: 40px
+		z-index: 2
+	.supptitle
+		font-size: 24px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.5
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+	.suppform
+		display: flex
+		flex-direction: column
+		align-self: flex-end
+		z-index: 2
+		.form-i
+			display: flex
+			margin-bottom: 25px
+			align-items: center
+			position: relative
+			p
+				font-size: 12px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
+				text-align: right
+				color: #a58a73
+				position: absolute
+				top: 12px
+				right: 5px
+			h3
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				text-align: right
+				color: #ffffff
+				width: 140px
+				margin-right: 15px
+				margin-bottom: 0
+			input
+				border-radius: 31px
+				border: solid 1px #ffffff
+				background-color: transparent
+				width: 320px
+				color: #fff
+				padding: 7px 10px
+			.more
+				height: 170px	
+		.mor
+			align-items: flex-start
+			h3
+				margin-top: 10px
+		textarea
+			border-radius: 20px
+			border: solid 1px #ffffff
+			background-color: transparent
+			width: 320px
+			color: #fff
+			padding: 7px 10px
+		input[type=file]
+			display: none
+		.labe
+			border-radius: 31px
+			border: solid 1px #ffffff
+			background-color: transparent
+			width: 180px
+			color: #fff
+			padding: 7px 10px
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-left: 12px
+			.icon
+				width: 15px
+				background-image: url(../img/_src/ico/filedown.svg)
+				background-repeat: no-repeat
+				background-size: contain
+				height: 16px
+				margin-right: 10px
+
+		.cenr
+			display: flex
+			justify-content: center	
+
+.form-i
+	.labe
+		&:focus
+			border: solid 1px #f9b034	
+.support .suppform .form-i input 
+	&:focus
+		border: solid 1px #f9b034	
+.support .suppform textarea
+	&:focus
+		border: solid 1px #f9b034		
+
+#submitsupp
+	display: none
+.send
+	font-family: MyanmarMN
+	font-size: 27px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.41
+	letter-spacing: 1.35px
+	text-align: center
+	color: #2d191a
+	border-radius: 30px
+	min-width: 200px
+	align-self: flex-end
+	border-radius: 27px
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #f3efe8, #dbd0ba)
+	padding: 3px 
+
+
+
+	span	
+		padding: 5px 10px	
+
+
+.check-support
+	display: flex
+	justify-content: space-between
+	width: 320px
+	input[type=radio]
+		display: none	
+	.title-radio
+		border-radius: 31px
+		border: solid 1px #ffffff
+		background-color: transparent
+		width: 100px
+		color: #fff
+		padding: 7px 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+		.chektit
+			margin-bottom: 0
+.check-support
+	input[type=radio]
+		&:checked + .title-radio
+			border: solid 2px #f9b034
+			transition: all ease 0s
+
+
+// Section Support end
+
+
+
+// Section FAQ 
+
+.faq
+	margin: 30px
+	margin-top: 100px
+	margin-right: 70px
+	.title
+		font-size: 30px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 0.95
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+		margin-bottom: 50px
+	.quest
+		h3
+			font-size: 28px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.19
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+			&:before
+				background-image: url(../img/_src/ico/stick.svg)
+				width: 60px
+				display: inline-block
+				content: ""
+				background-size: contain
+				height: 30px
+				background-repeat: no-repeat
+			
+		p
+			font-size: 18px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #371f18
+			padding: 0 30px
+			padding-bottom: 40px
+			position: relative
+			&:before
+				position: absolute
+				background-image: url(../img/_src/ico/bobbbs.svg)
+				width: 80px
+				display: block
+				content: ""
+				background-size: contain
+				height: 30px
+				background-repeat: no-repeat
+				right: 40px
+				bottom: 0px
+		.hiddpsev
+			&:before
+				display: none		
+
+					
+	.formquest
+		background-color: #2d191a
+		border-radius: 31px
+		max-width: 900px
+		padding: 40px 20px
+		justify-content: center
+		position: relative
+		display: flex
+		margin-bottom: 80px
+		&:before
+			position: absolute
+			background-image: url(../img/_src/ico/coffqr.svg)
+			width: 250px
+			display: block
+			content: ""
+			background-size: contain
+			height: 400px
+			background-repeat: no-repeat
+			right: -125px
+			bottom: -80px
+			z-index: 5
+		.title
+			h3
+				font-size: 25px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.19
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+
+	.suppform
+		display: flex
+		flex-direction: column
+		align-self: flex-end
+		width: 480px
+		.form-i
+			display: flex
+			margin-bottom: 25px
+			align-items: center
+			position: relative
+			p
+				font-size: 12px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
+				text-align: right
+				color: #a58a73
+				position: absolute
+				top: 12px
+				right: 5px
+			h3
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				text-align: right
+				color: #ffffff
+				width: 140px
+				margin-right: 15px
+				margin-bottom: 0
+			input
+				border-radius: 31px
+				border: solid 1px #ffffff
+				background-color: transparent
+				width: 320px
+				color: #fff
+				padding: 7px 10px
+			.more
+				height: 170px	
+		.mor
+			align-items: flex-start
+			h3
+				margin-top: 10px
+		textarea
+			border-radius: 20px
+			border: solid 1px #ffffff
+			background-color: transparent
+			width: 320px
+			color: #fff
+			padding: 7px 10px
+
+	.form-i input 
+		&:focus
+			border: solid 1px #f9b034	
+	textarea
+		&:focus
+			border: solid 1px #f9b034	
+.form-i
+	.labe
+		&:focus
+			border: solid 1px #f9b034	
+	
+
+#submitfaq
+	display: none
+.send
+	font-family: MyanmarMN
+	font-size: 27px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.41
+	letter-spacing: 1.35px
+	text-align: center
+	color: #2d191a
+	background: #ff3
+	background: linear-gradient(0deg, rgba(250,250,250,1) 7%, rgba(235,229,229,1) 63%)
+	border-radius: 30px
+	width: 200px
+	align-self: flex-end
+	&:hover
+		background: linear-gradient(0deg,#fafafa 7%,#ffffff 63%)
+	&:active
+    background: linear-gradient(0deg,#fafafa 7%,#ebe5e5 0%)
+	span	
+		padding: 5px 10px	
+
+
+// Section FAQ end
+
+// Section Autorized
+@media screen and (max-height: 900px)
+	.autoriz
+		&:before
+			width: 835px !important
+.autoriz
+	max-height: 100vh	
+	height: 79vh
+	width: 100%
+	
+	&:before
+		content: ''
+		background-image: url(../img/_src/bg-login.svg)
+		display: block
+		height: 100vh
+		width:	900px
+		background-repeat: no-repeat
+		position: absolute
+		background-position: center center
+		background-size: cover
+		right: -5px
+		top: 0px
+		z-index: -1
+		//transition: 0.5s
+	.box-autor
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 600px
+		border-radius: 31px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.45)
+		border: solid 3px var(--milk-chocolate-50)
+		background-image: linear-gradient(229deg, #703c16, #a5622b)
+		justify-content: flex-start
+		max-width: 530px
+		.tabs
+			// height: 95px
+			min-height: 90px
+			max-height: 95px
+			width: 330px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 35px
+			input[type="radio"]
+				&:checked + .lable
+					color: #fff
+					position: relative
+					&:before
+						position: absolute
+						content: ''
+						width: 105%
+						height: 4px
+						background: #fff
+						bottom: -8px
+						border-radius: 4px
+				&:checked ~ .box-form
+					display: block		
+			.lable
+				font-size: 30px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: -1.9px
+				text-align: left
+				color: #a58a73
+			.recov-title,.recov-title-1,.twofa-title
+				display: none
+				font-size: 18px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.38
+				letter-spacing: normal
+				text-align: center
+				color: #f8d496
+				padding-top: 105px
+				margin-bottom: 20px
+		input[type="radio"]
+			display: none	
+		.box-form
+			display: flex
+			flex-direction: column
+			max-width: 350px
+			width: 100%
+			margin-bottom: auto
+			input
+				width: 100%
+				box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.33)
+				background-color: #a58a73
+				border-radius: 30px
+				font-size: 18px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.45
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				padding: 5px 20px
+				padding-top: 6px
+				padding-left: 40px
+				margin-bottom: 23px
+				position: relative
+::-webkit-input-placeholder
+	color: #fff
+	font-size: 18px
+	font-style: normal
+	font-stretch: normal
+	letter-spacing: normal
+	line-height: normal	!important
+	text-align: left
+	color: #ffffff
+	opacity: 0.6
+
+.autoriz
+	display: flex
+	flex-direction: column
+	.box-autor
+		margin-left: 100px
+		margin-left: calc(13vw + -15.7vh )
+		position: relative
+		min-height:	auto
+		display: flex
+		justify-content: center
+		margin-top: 150px
+		transition: all ease 1s
+		&:before
+			content: ''
+			background-image: url(../img/_src/ico/bobs3.svg)
+			width: 60px
+			background-size: contain
+			height: 50px
+			background-repeat: no-repeat
+			position: absolute
+			bottom: 10px
+			right: 10px
+		.btn-back
+			display: none
+			border-radius: 33px
+			background-color: #f9b034
+			display: none
+			height: 38px
+			width: 120px
+			font-size: 18px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #ffffff
+			justify-content: center
+			align-items: center
+			position: absolute
+			left: 10px
+			top: 10px
+			&:before   
+				content: ''
+				background-image: url(../img/_src/ico/arrow.svg)
+				background-repeat: no-repeat
+				display: inline-block
+				z-index: 1
+				background-size: contain
+				width: 17px
+				height: 11px
+				margin-right: 10px
+				margin-top: -2px
+				transform: rotate(180deg)
+		.box-form	
+			display: none
+			.item-form
+				position: relative
+			i
+				display: block
+				width: 25px
+				height: 25px
+				background: #a5622b
+				border-radius: 50%
+				position: absolute
+				z-index: 2
+				top: 5.5px
+				left: 10px
+				background-position: center
+			.log
+				background-image: url(../img/_src/ico/login.svg)
+				background-size: contain
+			.bit
+				background-image: url(../img/_src/ico/bit.svg)
+				background-size: contain
+
+			.pass
+				background-image: url(../img/_src/ico/password.svg)
+				background-size: contain	
+			.login-btn
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 130px
+				margin-bottom: 0
+				background-size:	cover
+				background-position: center
+				box-shadow: none
+				border: none
+				padding: 5px 0px
+				border-radius: 27px
+				box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+				background-image: linear-gradient(to bottom, #95613b, #703c16)
+				text-align: center
+				&:hover
+					background-image: linear-gradient(to bottom,#95613b,#7b461f)
+				&:active
+					background-image: linear-gradient(to bottom,#885734,#5d3111)	
+
+			a
+				display: block
+				width: 180px
+				width: auto
+			.send-form
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 50px
+				margin-top: 20px
+				label
+					width: 65px
+					height: 24px
+					margin-bottom: 0
+.login
+	&:before
+			background-image: url(../img/_src/bg-login.svg)
+	.form-one
+		display: flex !important
+.sign
+	&:before
+			background-image: url(../img/_src/bg-sign.svg)
+	.form-two
+		display: flex	!important
+.recovery_1
+	&:before
+			background-image: url(../img/_src/bg-recovery.svg)
+	.form-four
+		display: flex	!important
+	.box-autor .box-form .send-form
+		justify-content: flex-end	
+	.tabs
+		.lable
+			display: none
+		.recov-title-1
+			display: block !important	
+	.btn-back
+		display: flex !important
+.twofa
+	&:before
+			background-image: url(../img/_src/bg-twofa.svg)
+	.form-five
+		display: flex	!important		
+	.box-autor .box-form .send-form
+		justify-content: flex-end	
+	.tabs
+		.lable
+			display: none
+		.twofa-title
+			display: block !important	
+	.btn-back
+		display: flex !important
+.recovery
+	&:before
+			background-image: url(../img/_src/bg-recovery.svg)
+	.form-three
+		display: flex	!important		
+	.box-autor .box-form .send-form
+		justify-content: flex-end	
+	.tabs
+		.lable
+			display: none
+		.recov-title
+			display: block !important	
+	.btn-back
+		display: flex !important
+.policy	
+	font-size: 9px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.43
+	letter-spacing: 0.7px
+	text-align: left
+	color: #ffffff
+
+
+.switch
+	display: none
+	&:checked + .switch-for::before
+		right: 3px
+		transition-duration: 500ms
+	&:checked + .switch-for::after	
+		background-color: #f8d496
+.switch-for
+	cursor: pointer
+	position: relative
+	&:after
+		content: "off\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0on"
+		width: 60px
+		height: 28px
+		border-radius: 16px
+		border: solid 1px rgba(249, 176, 52, 0.16)
+		background-color: #fff
+		position: absolute
+		top: -4px
+		right: 0
+		font-size: 8px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.5
+		letter-spacing: normal
+		text-align: center
+		color: #a5622a
+		display: flex
+		justify-content: center
+		align-items: center
+	&:before
+		content: ""
+		width: 24px
+		height: 24px
+		transition-duration: 500ms
+		background-size: contain
+		border-radius: 50%
+		position: absolute
+		background-image: url(../img/_src/ico/check-ico.png)
+		background-position: center 
+		right: 33px
+		top: -2px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+		z-index: 2
+		// content: ""
+    // width: 24px
+    // height: 24px
+    // transition-duration: 500ms
+    // background-color: #fff
+    // border-radius: 50%
+    // position: absolute
+    // background-image: url(../img/_src/ico/check-ico.png)
+    // background-position: center
+    // right: 33px
+    // top: -2px
+    // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+		// z-index: 1
+
+
+.box-autor
+	.switch-for
+		&:after
+			content: ""	
+.fields_input__alert
+	position: absolute
+	background-color: #f9b034
+	top: -32px
+	border-radius: 31px
+	left: 100px
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 60px
+		bottom: -18px
+		border: 10px solid transparent
+		border-top: 10px solid #f9b034
+		z-index: 1
+	.alert_mes
+		margin: 0
+		padding: 3px 20px
+		font-size: 14px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: center
+		color: #703c16
+
+// Section Autorized end
+
+// Section BFF WALLETS
+.BFF-wallet
+	padding: 50px 100px
+	border-radius: 31px
+	margin: 0 20px
+	margin-bottom: 50px
+	padding-bottom: 60px
+	position: relative
+
+	box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+	background-color: #2d191a
+	.bff-wallets
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 100%
+	.wallets-title
+		margin-bottom: 40px
+		h2
+			font-size: 28px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.5
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+			text-transform: uppercase
+	.wallet-item
+		width: 100%
+		border-radius: 18px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.42)
+		background-color: #f9b034
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		min-height: 500px
+		margin-bottom: 20px
+	.app-d
+		background-color: #371f18
+		padding: 60px 40px
+		justify-content: space-between
+		img
+			width: 100%	
+			min-width: 100px
+	.wallets-blocks
+		width: 100%	
+	.logo-app
+		width: 120px
+		height: 112px	
+		margin-bottom: 20px
+	.butt-download
+		display: flex
+		margin: 30px 0
+		margin-top: 120px
+		max-width: 260px
+		width: 85%
+		height: 55px
+		border-radius: 27px
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+		background-image: linear-gradient(to bottom, #6f5252, #2d191a)
+		&:hover
+			background-image: linear-gradient(to bottom,#7d5c5c,#4a2c2e)
+		&:active
+			background-image: linear-gradient(to bottom,#5d4242,#1f1112)
+	
+
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+		h4
+			display: inline-block
+			font-size: 24px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: 1.35px
+			text-align: center
+			color: #ffffff
+			margin: 0
+			
+	.app-title
+		h3
+			font-size: 19px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #2d191a
+
+// Section BFF WALLETS end
+
+
+
+
+
+
+
+// Section Whitepaper
+
+.privaci .title-block h3, .whitepaper .title-block h3
+	margin: 50px 0	
+.privaci .box-button span, .whitepaper .box-button .padnonr
+	padding-right: 0	
+.whitepaper,.privaci
+	padding: 60px
+	.title
+		display: flex
+		justify-content: space-between
+		font-size: 30px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 0.95
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+	.box-button
+		display: flex
+		align-items: center
+		span
+			text-decoration: underline
+			padding-left: 10px
+			font-size: 27px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: left
+			color: #2d191a
+		img
+			height: 30px	
+	.title-block
+		h3
+			font-size: 28px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.19
+			letter-spacing: normal
+			text-align: center
+			color: #703c16
+	p
+		font-size: 20px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+		padding-right: 70px
+	span
+		font-size: 20px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #a58a73
+		padding-right: 70px
+	.blacktitt	
+		font-size: 25px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+		display: block
+		margin-top: 60px
+		padding: 0 40px
+		padding-bottom: 10px
+	.centtt
+		text-align: center	
+		display: block
+		text-transform: uppercase
+		padding-top: 40px
+	.centacc
+		text-align: center	
+		display: block
+		padding-top: 40px
+		color: #f9b034
+		padding-bottom: 30px
+	.parag
+		margin-top: 40px
+		margin-bottom: 10px
+		h4
+			font-size: 26px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.19
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+
+	.box-block
+		padding: 20px
+		border-radius: 31px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+		background-color: #ede8dd
+		min-height: 500px
+		margin: 30px 0
+		.title-block
+			display: flex
+			flex-direction: column
+			h3
+				text-align: left
+			.centssa
+				text-align: center	
+	.list
+		display: flex
+		flex-direction: column
+		padding-left: 100px
+		margin-top: auto
+		margin-bottom: auto
+		margin-top: 50px
+		border-left: 3px #a58a73 solid
+		
+		h5
+			font-size: 22px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.46
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+			padding-bottom: 20px
+		span
+			color: #2d191a
+			padding-right: 10px	
+.imggraf
+	display: flex
+	max-width: 350px
+	height: 350px
+	align-self: center
+	img
+		width: 100%
+		height: 100%
+.listtitleb
+	p
+		padding: 0
+		padding-left: 5px
+		font-size: 20px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #a5622b
+	h3
+		font-size: 23px
+		font-weight: bold
+		color: #371f18
+		b
+			padding-left: 60px
+			font-size: 23px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #371f18
+		i
+			font-weight: bold
+			color: #371f18
+			font-style: normal
+.imgdia
+	padding-top: 60px
+	display: flex
+	max-width: 700px
+	align-self: center
+	img
+		width: 100%
+		height: 100%
+.formull
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 20px 0
+
+	p
+		padding-left: 40px
+		margin-bottom: 0px
+
+.centdtab
+	text-align: center	
+.tabwta
+	width: 250px	
+	text-align: center
+.tabwga
+	padding: 20px 40px
+	vertical-align: text-top	
+.grwegfd
+	height: auto
+.styledda
+	font-size: 20px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.4
+	letter-spacing: normal
+	text-align: left
+	color: #2d191a
+.tabbssd
+	width: 100%
+	overflow: hidden
+.acssq
+	font-size: 18px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.4
+	letter-spacing: normal
+	text-align: left
+	font-weight: bold
+	color: #f9b034
+	display: inline
+.titleclass
+	font-size: 20px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.4
+	letter-spacing: normal
+	color: #2d191a		
+	padding: 20px 0
+
+.borderccs
+	border-bottom: 2px solid #aea39d	
+	border-top: 2px solid #aea39d	
+
+.technic
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+			
+.parag
+	h4
+		display: flex
+		align-items: center
+		&:before
+			content: ""
+			background-image: url(../img/_src/ico/stikfloo.svg)	
+			width: 60px
+			height: 40px
+			background-size: contain
+			display: inline-block
+			background-repeat: no-repeat
+			margin-left: -25px
+			margin-right: 10px
+// Section Whitepaper end
+
+
+
+// Section Privaci
+.privaci
+	.parag
+		h4
+			text-transform: uppercase
+	.liters
+		font-size: 20px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+		padding-right: 70px	
+		i
+			padding-left: 40px
+			font-weight: bold
+			color: #703c16
+			font-style: normal
+			padding-right: 30px
+	.punkt
+		margin-right: 25px
+.boottbut
+	display: flex
+	justify-content: center
+
+
+// Section Privaci end
+
+// Section Regconfirm
+
+.regconfirm,.success
+	display: flex
+	justify-content: center
+	.regcon
+		max-width: 870px
+		width: 100%
+		height: 650px
+		margin: 60px 0
+		border: solid 1px #a5622a
+		background-color: #a5622a
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		position: relative
+		border-radius: 15px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4)
+		&:before
+			content: ""
+			background-image: url(../img/_src/successs.svg)
+			position: absolute
+			display: block
+			width: 670px
+			max-width: 100%
+			height: 225px
+			top: -1px
+			left: -1px
+			background-size: contain
+			background-repeat: no-repeat
+			border-radius: 15px
+		&:after
+			content: ""
+			background-image: url(../img/_src/ico/bityllow.svg)
+			position: absolute
+			display: block
+			width: 230px
+			max-width: 100%
+			height: 70px
+			bottom: 30px
+			left: -1px
+			background-size: contain
+			background-repeat: no-repeat
+		p
+			font-size: 19px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: center
+			color: #f8d496
+		h3
+			font-size: 40px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: 4.8px
+			text-align: center
+			color: #f8d496
+			margin-bottom: 20px
+
+.success
+	.regcon
+		background-color: #f9b034
+		border: solid 1px #f9b034
+		h3
+			font-size: 40px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: 4.8px
+			text-align: center
+			color: #703c16
+		p
+			max-width: 400px
+			font-size: 19px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: center
+			color: #703c16
+// Section Regconfirm end
+
+// Section Recipes
+.log-menu
+	display: flex
+	justify-content: center
+	width: 100%
+	max-width: 335px
+	height: 130px
+	margin: 10px auto
+	margin-top: 30px
+	img
+		width: 100%
+
+.basiccoff
+	font-size: 22px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.18
+	letter-spacing: -0.79px
+	text-align: center
+	color: #f9b034
+
+.box-coff-card
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin: 30px
+	background-image: url(../img/_src/recipes/bg-boxcoff.png)
+	background-size: cover
+	background-repeat: no-repeat
+	border-radius: 30px
+	background-position: center center
+	padding: 40px 180px
+	position: relative
+	&:before
+		content: ""
+		background-image: url(../img/_src/recipes/stikbrow.svg)
+		position: absolute
+		display: block
+		width: 140px
+		height: 88px
+		right: 0
+		top: 60px
+		background-repeat: no-repeat
+	&:after
+		content: ""
+		background-image: url(../img/_src/recipes/bitlogbrow.svg)
+		position: absolute
+		display: block
+		width: 90px
+		height: 90px
+		right: 20px
+		bottom: 60px
+		background-repeat: no-repeat
+		background-size: contain	
+	.row
+		width: 100%
+.coffitems
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.lowwighy
+	width: 90%	
+
+.linecoff
+	display: flex
+	flex-direction: column
+	align-items: center
+	min-width: 100%
+	position: relative
+	.sortcoff
+		font-size: 28px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 0.83
+		letter-spacing: normal
+		text-align: center
+		color: #703c16
+		margin: 50px 0
+		padding: 0 20px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		
+		.titlesort
+			padding: 0 20px
+			text-align: center
+		.lineprev
+			width: 33.3%
+			height: 2px
+			opacity: 0.49
+			border-radius: 2px
+			background-color: #703c16
+			display: block
+			overflow: hidden
+	.itemcoffr
+		margin: 50px
+		display: flex
+		flex-direction: column
+		align-items: center
+		.namecoff
+			padding: 20px 0
+			width: 130px
+			text-align: center
+			font-size: 19px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.13
+			letter-spacing: normal
+			text-align: center
+			color: #2d191a
+
+.ice-cold
+	&:after
+		content: ""
+		display: inline-block
+		background: url(../img/_src/ico/ice-cold.svg)
+		background-size: contain
+		width: 35px
+		height: 35px
+		margin-left: 5px
+		margin-bottom: -6px
+		background-repeat: no-repeat
+// Section Recipes end
+
+// Section Anout us 
+
+.aboutus
+	background-color: #2d191a
+	font-family: AvenirNext, sans-serif
+	margin-bottom: 20px
+	h3
+		font-family: AvenirNextBold, sans-serif
+		font-size: calc(0.2rem + 1vh + 1.8vw)
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.37
+		letter-spacing: -1px
+		text-align: left
+		color: #f9b034
+	p
+		text-align: left
+		font-family: AvenirNext, sans-serif
+		font-size: calc(0.2rem + .7vh + 0.9vw)	
+
+	.headd
+		width: 100%
+		color: #fff
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: calc(5rem + 46vh + 60vw)
+		background-color: #2d191a
+		position: relative
+		.titlebox-head
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 28%
+		.title-headd
+			margin-top: 60px
+			font-family: AvenirNextBold, sans-serif
+			font-size: calc(0.4rem + 1vh + 2vw)
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.37
+			letter-spacing: -3.15px
+			text-align: center
+			color: #ffffff
+		.descrip-headd
+			font-family: AvenirNext, sans-serif
+			font-size: calc(0.2rem + 0.5vh + 1.3vw)
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.36
+			letter-spacing: -1.95px
+			text-align: center
+			color: #ffffff
+		.headd-logo	
+			background-image: url(../img/_src/about/orange-bitback.svg)
+			height: 5vw
+			width: 70%
+			background-size: contain
+			background-repeat: no-repeat
+			margin: 20px 0
+		.box-pc-headd	
+			background-image: url(../img/_src/about/macpc.png)
+			width: 45%
+			height: 25vw
+			background-size: contain
+			background-repeat: no-repeat
+		.unique
+			display: flex
+			background-image: url(../img/_src/about/border-orenge.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			width: 100%
+			height: 35vw
+			background-position: bottom
+			bottom: 0
+			position: absolute
+		.titlex-qr
+			display: flex
+			flex-direction: column
+			width: 85%
+			margin-left: auto
+		.photeqrcreate
+			background-image: url(../img/_src/about/phonesa.png)
+			height: 100%
+			min-height: 35vw
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+		
+		.title-createqr
+			margin-top: 6vw
+			font-family: AvenirNextBold, sans-serif
+			font-size: calc(0.2rem + 1vh + 1.8vw)
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.37
+			letter-spacing: -1px
+			text-align: left
+			color: #f9b034
+			display: inline-block
+			position: relative
+			width: 55%
+			&:before
+				content: ""
+				background: url(../img/_src/about/stick.svg)
+				display: block
+				background-repeat: no-repeat
+				width: calc(1rem + 4vh + 5.5vw)
+				height: calc(1rem + 4vh + 6vw)
+				background-position: bottom right
+				background-size: contain
+				position: absolute
+				transform: scale(-1, 1)
+				top: calc(-1rem - 1vh - 2vw)
+				right: calc(-1rem - 1vh - 11vw)
+		.desc-cereateqr
+			display: inline-block
+			text-align: left
+			font-family: AvenirNext, sans-serif
+			font-size: calc(0.2rem + .7vh + 0.9vw)
+	.orenge
+		width: 100%
+		text-align: center
+		display: flex	
+		align-items: center
+		height: calc(2rem + 20vh + 20vw)
+		background-color: #f9b034
+		h3.orange-title
+			display: inline-block
+			color: #703c16
+			position: relative
+			margin-left: -20px
+		p.orange-desc
+			display: inline-block
+			color: #2e1a1a
+		
+		.orange-title:before
+			content: ""
+			background: url(../img/_src/about/stick.svg)
+			display: block
+			background-repeat: no-repeat
+			width: calc(1rem + 4vh + 5.5vw)
+			height: calc(1rem + 4vh + 6vw)
+			background-position: bottom right
+			background-size: contain
+			position: absolute
+			top: calc(-1rem - 1vh - 4vw)
+			left: calc(-1rem - 1vh - 5vw)
+		.faas
+			height: 35vw
+			position: relative	
+		.ponesqr
+			background-image: url(../img/_src/about/phonesqr.png)
+			height: 100%
+			width: 100%
+			background-repeat: no-repeat
+			background-size: contain
+			position: absolute
+			bottom: -6vw
+			z-index: 3
+	.beige
+		width: 100%
+		color: #fff
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 2000px
+		height: calc(5rem + 60vh + 80vw)
+		background-color: #f8d496
+		position: relative
+		&:before
+			content: ""
+			background-image: url(../img/_src/about/border-orenge.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			width: 100%
+			height: 35vw
+			background-position: bottom
+			top: -1px
+			transform: scale(-1, -1)
+			position: absolute
+		&:after
+			content: ""
+			background-image: url(../img/_src/about/border-brown.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			width: 100%
+			height: 43vw
+			background-position: bottom
+			bottom: -1px
+			position: absolute
+		.pcmacsec
+			margin-top: calc(10vh + 20vw)
+			width: 100%	
+			z-index: 2
+		.title-ss
+			text-align: left 
+			width: 70%
+		.orange-title
+			display: inline-block
+			color: #703c16
+			position: relative
+			&:before
+				content: ""
+				background: url(../img/_src/about/stick.svg)
+				display: block
+				background-repeat: no-repeat
+				width: calc(1rem + 4vh + 5.5vw)
+				height: calc(1rem + 4vh + 6vw)
+				background-position: bottom right
+				background-size: contain
+				position: absolute
+				transform: scale(-1, 1)
+				top: calc(-1rem - 1vh - 2vw)
+				right: calc(-1rem - 1vh - 5vw)
+		.orange-desc
+			display: inline-block	
+			color: #703c16
+		.macpcstatus
+			min-height: 400px
+			background-image: url(../img/_src/about/macpcstatus.png)
+			height: 100%
+			width: 100%
+			background-repeat: no-repeat
+			background-size: contain
+			z-index: 3
+			background-position: center 0
+		.macpcinvest
+			min-height: 400px
+			background-image: url(../img/_src/about/macpcinvest.png)
+			height: 100%
+			width: 100%
+			background-repeat: no-repeat
+			background-size: contain
+			z-index: 3
+			background-position: center 0
+		.sassd
+			margin-left: auto	
+			.orange-title
+				&:before
+					content: ""
+					background: url(../img/_src/about/stick.svg)
+					display: block
+					background-repeat: no-repeat
+					width: calc(1rem + 4vh + 5.5vw)
+					height: calc(1rem + 4vh + 6vw)
+					background-position: bottom right
+					background-size: contain
+					position: absolute
+					transform: scale(1,1)
+					top: calc(-1rem - 1vh - 4vw)
+					left: calc(-1rem - 1vh - 5vw)	
+	.brown
+		width: 100%
+		color: #fff
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: calc(2rem + 25vh + 28vw)
+		background-color: #a5622a
+		position: relative	
+		.titlebox-brown
+			display: flex
+			flex-direction: column
+			align-items: center
+			.title-brown
+				font-family: AvenirNextBold, sans-serif
+				font-size: calc(0.4rem + 1vh + 2vw)
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.37
+				letter-spacing: -3.15px
+				text-align: center
+				color: #f9b034
+			.brown-logo
+				background-image: url(../img/_src/about/orange-bitback.svg)
+				height: 5vw
+				width: 21%
+				background-size: contain
+				background-repeat: no-repeat
+				margin: 20px auto
+			.descrip-brown
+				isplay: inline-block
+				color: #fff
+				width: 40%
+				text-align: center
+				.oressa
+					font-weight: 600
+					color: #f9b034
+	.downloadapp
+		display: flex
+		.bataap
+			margin: 0 20px
+			margin-top: 5vw 
+			.wasdsa
+				width: 12vw
+
++media-breakpoint-down(md)
+	.aboutus .headd
+		height: calc(5rem + 46vh + 50vw)
+		.titlebox-head
+			width: 50%
+		.headd-logo
+			width: 41%
+	.aboutus .beige
+		.pcmacsec
+			margin-top: calc(10vh + 13vw)
+
++media-breakpoint-down(xs)
+	.aboutus .orenge
+		.title-ss
+			width: 110%
+		.orange-title
+			margin-left: -11px
+		p.orange-desc
+			font-size: calc(.2rem + 0.5vh + .6vw)
+	.aboutus .headd
+		height: 420px 
+		.unique
+		.titlex-qr
+			width: auto
+		.orenge
+			flex-direction: column
+			height: calc(2rem + 20vh + 4vw)
+			.faas
+				height: 50vw
+		.desc-cereateqr
+			font-size: calc(.2rem + .7vh + 0.5vw)
+	.aboutus .beige
+		height: calc(5rem + 60vh + 140vw)
+		.pcmacsec:last-child 
+			margin-top: 30px
+			flex-direction: column-reverse
+		.title-ss
+			width: auto
+			margin-left: 40px
+		.macpcinvest
+			min-height: 210px
+	.aboutus .beige .macpcstatus 
+		min-height: 200px	
+	.aboutus .brown .titlebox-brown
+		.title-brown
+			letter-spacing: 1px
+		.descrip-brown
+			width: auto
+		.brown-logo
+			margin: 5px
+	.aboutus .downloadapp .bataap .wasdsa	
+		width: 35vw	
+// Section Anout us end
+
+
+
+
+.grecaptcha-badge
+	visibility: hidden		
+.footer
+	flex: 0 0 auto
+
++media-breakpoint-down(lg)
+	.livecoin .box-qr-livecoin
+		width: 300px
+		height: 300px
+		margin: 0 auto
+	.livecoin .soc-btn-livecoin
+		padding: 0
+		margin: 0px 80px
+	.livecoin
+		background-color: #f8af33
+	.box-item .spanning-coffee
+		font-size: 4vw
+	.support .wrapform:before
+		display: none
+	.box-cont
+		.desckrip-bff
+			left: auto
+			right: 4px
+			font-size: 10px
+			width: 207px
+		&:before
+			width: 538px
+			height: 446px
+			right: 22px
+			top: 20%
+	.bitcoff
+		img
+			width: 300px
+	.mainhead:after
+		display: none	
+	.mainhead .title-box p
+		font-size: 20px
+	.nav-menu
+		h3
+			font-size: 15px	
+	.support
+		border-radius: 31px
+		box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.62)
+		background-color: #2d191a	
+		background-image: none	
+
++media-breakpoint-down(md)
+	.logo-radoi
+		display: none
+	.livecoin .soc-btn-livecoin
+		padding: 0
+		justify-content: center
+		margin: 0
+		.itm-soc-live
+			margin: 10px
+	.livecoin .box-qr-livecoin
+		width: 270px
+		height: 270px
+		margin: 0 auto
+	.livecoin .dec-livecoin
+		text-align: center
+		font-size: calc(.2rem + 1vw)
+		display: block
+	.livecoin .title-livecoin
+		text-align: center
+		font-size: calc(.6rem + 1vw)
+	.livecoin .title-box
+		margin: 0 auto
+		width: 100%
+	.btn-sing
+		margin-top: 20px
+	.video
+		.box-video:before
+			display: none
+		.videov
+			width: 95vw
+
+		
+	.privaci, .whitepaper
+		padding: 20px
+		p
+			padding-right: 0px
+		.liters
+			padding-right: 0px
+	
+
+	.autoriz .box-autor
+		margin-left: auto
+		margin-right: auto
+		width: 400px
+	.autoriz:before
+		display: none
+	.nav-menu .active:before
+		width: 100%
+		border-radius: none
+		height: 2px
+		right: 0
+		bottom: 5px
+	.faq .formquest::before
+		display: none 
+	.support
+		padding: 60px 30px
+	.top-head
+		flex-direction: column
+		ul
+			margin: 20px 0
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	.box-cont
+		display: none						
+	.mainhead
+		margin-bottom: 50px
+	.rangs 
+    margin-bottom: 50px	
+	.video .box-video
+		height: 55%
+	.video
+		height: 100%
+		margin-bottom: 50px
+	.box-mob
+		display: none
+	.box-applikat 
+		h3
+			font-size: 40px
+		p
+			font-size: 17px
+	.btn-download
+		width: 470px
+		img	
+			width: 200px
+	.app-box 
+		.box-mob
+			height: 80% 
+			img
+				width: 70%
+	
+	.elem li
+		margin: 0 7px
+
+	.btn-download .btn-i
+		margin: 40px 0
+	.app-box
+		margin-bottom: 0
+	.footer h4
+		margin-right: 30px
+		font-size: 18px
+	.footer .socual
+		margin-left: 30px
+	.error h2
+		font-size: 20px											
++media-breakpoint-down(sm)
+	.livecoin:before
+		bottom: 15px
+		left: 20px
+		width: 233px
+		height: 45px
+
+	.livecoin .box-qr-livecoin
+		width: 70%
+		height: 200px
+		margin: 0 auto
+	
+	.box-item .desc-coffee
+		max-height: none
+	.privaci, .whitepaper
+		padding: 10px
+	.whitepaper 
+		.title
+			flex-direction: column
+	.table-sloda
+		display: none
+	.box-applikat:after
+		display: none
+	.faq
+		margin-right: 0
+	.support
+		padding: 40px 15px
+	.app-box .box-mob
+		display: none
+	.box-applikat .appl
+		margin-left: 0
+	.app-box
+		min-height: 0	
+		height: 60vh
+	.video
+		margin-bottom: 0
+	.rangs
+		margin-bottom: 15px
+	.box-item
+		min-height: 0
+	.box-item .item-logo
+		margin-top: 0
+	.box-item h3
+		font-size: 45px
+	.box-item p
+		font-size: 18px	
+	.box-item span
+		font-size: 22px
+	.box-item .item-title
+		margin-bottom: 20px
+	.mainhead
+		height: 500px
+
++media-breakpoint-down(xs)
+	.interective-soung
+		display: none
+	.foot-bottom
+		flex-direction: column
+		align-items: center
+	.foot-head
+		margin: 0
+	.box-partners 
+		h3
+			font-size: 20px
+		p
+			font-size: 18px
+	.support .suppform
+		align-self: center
+	.autoriz .box-autor .box-form .send-form
+		margin-bottom: 30px !important
+	.watright:before,.watright:after,.watleft:before
+		display: none
+	
+	.box-coff-card:before,.box-coff-card:after
+		display: none
+	.box-coff-card
+		margin: 15px 0
+		padding: 0
+	.support 
+		display: flex
+		justify-content: center
+	.BFF-wallet
+		padding: 40px 10px
+	.autoriz 
+		height: auto
+		margin: 20px 0
+		
+	.autoriz .box-autor .box-form a
+		margin: 10px 0
+	.autoriz .box-autor .box-form .send-form
+		flex-direction: column
+		margin-bottom: auto
+	.autoriz .box-autor
+		width: 100%
+		padding: 0 10px
+	.autoriz .box-autor .box-form input
+		width: 100%
+		.autoriz .box-autor .box-form
+			align-items: center
+	.autoriz .box-autor .tabs
+		height: 70px
+		width: 230px
+	.autoriz .box-autor .tabs .lable
+		font-size: 20px
+	.mainhead:before 
+		width: 170px
+		bottom: 10px
+	.mainhead
+		height: 380px
+	.box-item:after
+		display: none
+	.box-applikat:before
+		display: none
+	.btn-download
+		width: 90%
+	.elem li
+		margin: 0 1px	
+	.elem a img
+		width: 40px
+	.faq .formquest
+		margin-bottom: 10px
+	.send
+		margin-left: auto
+		margin-right: auto
+	.faq
+		margin: 0
+	.faq .suppform .form-i
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 10px
+		h3
+			width: auto
+	.diskript
+		display: flex
+		flex-direction: column
+		align-items: center
+	.faq .quest p:before
+		display: none
+	.faq .quest h3:before
+		display: none
+	.faq .quest 
+		h3
+			font-size: 18px
+		p
+			font-size: 14px
+			margin: 0
+			padding: 20px 0	
+	.footer
+		flex-direction: column
+	.support 
+		margin-bottom: 30px
+	.support .suppform .form-i .more
+		height: 90px
+	.support .suppform .form-i
+		margin-bottom: 10px
+	.support .suppform .form-i h3
+		margin-right: 0
+	.support .suppform .form-i
+		flex-direction: column
+	.support .suppform .form-i p
+		display: none
+	.support .suppform .labe
+		width: 131px
+	.check-support .title-radio .chektit
+		font-size: 10px
+	.check-support
+		width: 250px
+	.support .suppform .form-i .more
+		width: 250px
+	.support .suppform .form-i input
+		width: 250px
+	.support .wrapform
+		width: auto
+	.support .suppform .form-i h3
+		font-size: 15px
+		width: auto
+	.support
+		padding: 15px
+		margin-left: 0
+		height: auto
+	.support h2
+		font-size: 15px
+		text-align: center	
+	.btn-download img
+		width: 150px
+	.mainhead .title-box
+		margin-left: 10px
+	.nav-menu
+		display: block
+	.bitcoff img
+		width: 230px
+	.mainhead .title-box p
+		font-size: 16px
+		padding: 0 20px
+		width: 100%
+	.mainhead .title-box
+		align-items: center
+		display: flex
+		flex-direction: column
+	.box-applikat h3
+		font-size: 18px		
+	.box-applikat p
+		font-size: 10px
+	.btn-download
+		width: 100%		
+	.elem a img 
+		width: 40px
+	.btn-download .btn-i
+		margin: 20px 5px			
+	.btn-download img
+		width: 115px
+	.footer h4
+		margin-top: 20px
+		font-size: 15px	
+	.footer .socual
+		margin-left: 0
+.disable
+	display: none		!important	
+@import "media" // Always at the end
+
+

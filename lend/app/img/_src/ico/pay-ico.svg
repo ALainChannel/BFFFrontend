@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.377" height="10.377" viewBox="0 0 10.377 10.377">
+    <defs>
+        <style>
+            .cls-1{fill:#f9b034}
+        </style>
+    </defs>
+    <g id="square-download" transform="translate(-1 -1)">
+        <path id="Path_910" d="M1.226 35a.226.226 0 0 0-.226.226v2.256a.226.226 0 0 0 .226.226h9.926a.226.226 0 0 0 .226-.226v-2.256a.226.226 0 1 0-.451 0v2.03H1.451v-2.03A.226.226 0 0 0 1.226 35z" class="cls-1" data-name="Path 910" transform="translate(0 -26.33)"/>
+        <path id="Path_911" d="M17.189 5.963h-2.03V1.226A.226.226 0 0 0 14.933 1h-.451a.226.226 0 0 0-.226.226v4.737h-2.03a.226.226 0 0 0-.177.365l2.481 3.158a.226.226 0 0 0 .355 0l2.481-3.158a.226.226 0 0 0-.177-.365z" class="cls-1" data-name="Path 911" transform="translate(-8.519)"/>
+    </g>
+</svg>

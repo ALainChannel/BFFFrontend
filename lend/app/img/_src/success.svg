@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="717.504" height="685.22" viewBox="0 0 717.504 685.22">
+    <defs>
+        <style>
+            .cls-1{fill:#a5622a}.cls-2{fill:#fff}.cls-3{clip-path:url(#clip-path)}.cls-4{fill:#f9b034}.cls-5{fill:#f8d496}.cls-6{filter:url(#Rectangle_11)}.cls-7{filter:url(#Rectangle_253)}
+        </style>
+        <filter id="Rectangle_253" width="735.504" height="703.22" x="-9" y="-6" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_11" width="383" height="527" x="6.494" y="17.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path"/>
+    </defs>
+    <g id="Group_504" data-name="Group 504" transform="translate(10.494 -62.22)">
+        <g class="cls-6" transform="translate(-10.49 62.22)">
+            <rect id="Rectangle_11-2" width="365" height="509" class="cls-2" data-name="Rectangle 11" rx="20" transform="translate(15.49 23.78)"/>
+        </g>
+        <g id="Group_503" data-name="Group 503" transform="translate(-11.262 -23.78)">
+            <g id="Mask_Group_3" class="cls-3" data-name="Mask Group 3" transform="translate(.768 86)">
+                <path id="Path_111" d="M413.983-9.418v1055.635s176.767 1.52 268.758-51.169c110.629-63.364 318.553-2.344 633.492-109.464s113.734-398.81 113.734-398.81V-20.285z" class="cls-4" data-name="Path 111" transform="translate(-606.661 -161.837)"/>
+                <path id="Path_112" d="M407.6 509.1s82.221-78.4 275.584-150.882 288.947-47.145 412.479-79.914 236.223-120.917 67.277-196.977S419.876-25.934 419.876-25.934z" class="cls-5" data-name="Path 112" transform="translate(-612.83 -163.793)"/>
+            </g>
+        </g>
+    </g>
+</svg>

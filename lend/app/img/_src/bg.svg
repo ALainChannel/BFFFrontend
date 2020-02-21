@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_3207" width="1920" height="5387" data-name="Group 3207" viewBox="0 0 1920 5387">
+    <defs>
+        <style>
+            .cls-1{fill:url(#radial-gradient)}.cls-2{fill:url(#radial-gradient-2)}
+        </style>
+        <radialGradient id="radial-gradient" cx="959.867" cy="2693.5" r="496.983" gradientTransform="matrix(2.806 0 0 7.872 -1733.259 -18510.047)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset=".41" stop-color="#fffefc"/>
+            <stop offset=".623" stop-color="#fffcf4"/>
+            <stop offset=".791" stop-color="#fff9e7"/>
+            <stop offset=".934" stop-color="#fff4d4"/>
+            <stop offset="1" stop-color="#fff2c9"/>
+        </radialGradient>
+        <radialGradient id="radial-gradient-2" cx="851.604" cy="510.036" r="630.89" gradientTransform="matrix(2.806 0 0 11.808 -1537.765 -5512.556)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset=".225" stop-color="#fcfcfa"/>
+            <stop offset=".453" stop-color="#f6f4ee"/>
+            <stop offset=".681" stop-color="#ece6da"/>
+            <stop offset=".909" stop-color="#ddd3be"/>
+            <stop offset="1" stop-color="#d7cab1"/>
+        </radialGradient>
+    </defs>
+    <path id="Rectangle_1" d="M0 0h1920v5387H0z" class="cls-1" data-name="Rectangle 1"/>
+    <path id="Rectangle_2" d="M0 0h1920v5387H0z" class="cls-2" data-name="Rectangle 2"/>
+</svg>

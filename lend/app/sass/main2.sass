@@ -1,0 +1,3912 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+	
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+h4
+	line-height: 1
+
+a
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 100%
+	color: #fff
+	display: inline-flex
+	&:hover
+		border: 0
+		color: #fff
+		text-decoration: none
+
+
+.said-bar
+	color: #000
+	width: 18%
+	height: 100vh
+	background: #333
+	
+.avatar
+	position: relative
+	margin-bottom: 10px
+	&-img
+		width:	150px
+		height: 150px
+		background:#444
+		border-radius: 100%re
+		position: absolute
+		left: 20%
+		margin-bottom: 10px
+
+.box-rank
+	display: flex
+	width: 100%
+	.btn
+		display: flex
+		align-items: center
+		width: 50%
+		margin: 0 10px
+		padding: 4px 2px
+		transition: box-shadow ease 0.5s
+		font-size: calc(0.5rem + 0.9vh)
+		a
+			justify-content: center
+			align-items: center
+	.pands
+		border-radius: 28px
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.43)
+		border: solid 1px #776d59
+		background-image: linear-gradient(to bottom, #f3efe8, #dbd0ba)
+		&:hover
+			background-image: linear-gradient(to bottom,#fdfcfb,#ece5d7)
+		&:active
+			background-image: linear-gradient(to bottom,#efebe5,#9e9686)
+	
+		a
+			font-size: calc(.5rem + .9vh)
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.43
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+
+.conteiner
+	display: flex
+	align-items: center
+	height: 100vh
+	justify-content: center
+	
+ul,li
+	list-style: none
+	padding: 0
+	margin: 0
+
+.chat
+	display: flex
+	flex-direction: column
+.chat-masseng
+	flex: auto
+	height: 80%
+	max-height: 400px
+	display: flex
+	//margin-top: 8px
+
+ul.mess
+	display: inline
+	overflow: auto
+	overflow-x: hidden
+	width: 100%
+	li
+		margin-bottom: 16px
+	.mess-title
+		display: flex
+		align-items: center
+		padding: 0 4.5rem 0 15px
+		&.send
+			flex-direction: row-reverse
+			padding: 0 15px 0 4.5rem
+
+			.avatar
+				margin-left: 20px
+				margin-right: 0
+			.boxmes
+				display: flex
+				flex-direction: column
+				background: #f9b034
+				i.time
+					left: 10px
+					color: #7d4516
+				span
+					align-self: flex-end
+					color: #7d4516
+					padding-top: 2px
+				p
+					color: #fff
+		.avatar
+			align-items: center
+			display: flex
+			justify-content: center
+			width: 40px
+			min-width: 40px
+			height: 40px
+			border-radius: 40px
+			margin-right: 20px
+			align-self: flex-end
+			margin-bottom: -10px
+			box-shadow: 0 3px 10px -3px rgba(0,0,0,.2)
+			position: relative
+			
+			img
+				width: 200%
+				hidth: 200%	
+				
+
+			
+		.boxmes
+			background: #371f18
+			border-radius: 16px
+			position: relative
+			min-width: 235px
+			p
+				font-size: 15px
+				font-weight: normal
+				line-height: 1.27
+				color: #a58a73
+				padding: 0 10px
+			span
+				font-size: 15px
+				font-weight: bold
+				line-height: 1.6
+				color: #f9b034
+				padding: 0 10px
+			i.time
+				font-size: 13px
+				line-height: 1.46
+				color: #f9b034
+				position: absolute
+				right: 10px
+				top: 6px
+		.avatar
+			&:before, &:after
+					content:	""
+					position:	absolute
+					bottom:	10px
+					height:	20px
+			&:after 
+				right:	-51px
+				width:	26px
+				background: #fff
+				border-bottom-right-radius: 20px
+				transform:	translate(-30px, 5px)
+				z-index: -1
+			&:before 
+				right:	-36px
+				border-left:	25px solid #371f18
+				border-bottom-right-radius: 30px 20px
+				transform:	translate(-6px, 5px)
+				z-index: -1
+
+
+ul.mess
+	li
+	.mess-title
+		&.send
+			.avatar
+				&:after 
+					left:	15px
+					width:	26px
+					background: #fff
+					border-bottom-left-radius: 25px
+					transform:	translate(-35px, 5px)
+					z-index: -1
+				&:before 
+					left:	-30px
+					border-left:	25px solid #f9b034
+					border-bottom-left-radius: 35px 20px
+					transform:	translate(-6px, 6px)
+					z-index: -1
+
+
+
+
+
+
+	
+.chat-send
+	background: #703c16
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-radius: 10px
+	.formchat
+		display: flex
+		width: 100%
+		align-items: center
+
+	input[name='write']
+		margin: 10px 10px 
+		width: 91%
+		border-radius: 20px
+		color: #703c16
+		line-height: inherit
+		padding-left: 20px
+		margin-right: 5px
+		border: none
+		&::placeholder
+			color: #703c16
+			
+
+	input[type='submit']
+		border-radius: 100%	
+		justify-self: center
+		width: 50px
+		height: 50px
+		margin-right: 3px
+		background-size: contain
+		// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+		background-image: url(../img/_src/arrow_btn.png)
+		background-color: transparent
+		background-image: cover
+		background-repeat: no-repeat
+		border: none
+		cursor: pointer
+		&:hover
+		&:active
+			opacity: .75	
+
+// \::-webkit-scrollbar-button
+//   background-image: url('')
+//   background-repeat: no-repeat
+//   width: 6px
+//   height: 0px
+
+// \::-webkit-scrollbar-track
+//   border-radius: 10px
+//   margin: 10px 5px
+//   background-color: #a58a73
+//   background-color: rgba(117, 190, 218, 0.0)
+	
+
+// \::-webkit-scrollbar-thumb
+//   border-radius: 10px
+//   background-color: #ffcb17
+//   box-shadow: 0px 1px 1px #fff inset
+//   background-image: radial-gradient(ellipse farthest-corner at center center, rgb(190, 104, 38) 0%, rgb(112, 60, 22) 74.8%)
+//   background-position: center
+//   background-repeat: no-repeat
+
+// ::-webkit-scrollbar
+// 	width: 15px
+// 	background-color: rgba(117, 190, 218, 0.0)	
+// Battons
+
+.btn
+	border-radius: 30px
+	color: rgba(249,176,52,0.8)
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.43)
+	padding: 4px 20px
+	background-image: linear-gradient(to top, #703c16, #a5622b)
+	&:hover
+		background-image: linear-gradient(to top,#703c16,#b36d33)
+	&:active
+		background-image: linear-gradient(to top,#703c16,#794a22)	
+.up-arr
+	display: flex
+	&:before
+		content: ''
+		background-image: url(../img/_src/ico/arrow-up.svg) 
+		background-repeat: no-repeat
+		width: 7px
+		margin-bottom: 3px
+		height: 10.5px
+		display: block
+		background-size: cover
+		display: flex
+		align-self: center
+		margin-right: 7px
+// Battons end 
+
+.hidden-bar 
+	.dotmenu
+		&:before
+			margin-left: 0px
+			transition: all	ease-in-out .8s
+		&:after
+			transition: all ease-in-out .8s
+		.dotline
+			margin-left: 0px
+			transition: all ease-in-out .85s		
+.dotmenu
+	position: absolute
+	width: 50px
+	height: 30px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&:before
+		content: ""
+		display: block
+		margin-left: .9em
+		width: 7.5px
+		height: 7.5px
+		background-color: #f9b131
+		border-radius: 50%
+		box-shadow: .9em 0 #a66227,	1.8em 0 #7e430e
+		transition: all ease-in-out .3s
+	&:after	
+		content: ""
+		display: block
+		width: 7.5px
+		height: 7.5px
+		background-color: #7e430e
+		border-radius: 50%
+		box-shadow: .9em 0 #70390e,	1.8em 0 #291213
+		transition: all ease-in-out .3s
+	.dotline
+		display: block
+		margin-left: .45em
+		width: 7.5px
+		height: 7.5px
+		background-color: #a66227
+		border-radius: 50%
+		box-shadow: .9em 0 #7e430e,	1.8em 0 #70390e
+		transition: all ease-in-out .3s
+// Side-bar 
+.main
+	display: flex
+.sidehei
+	height: 100vh	
+.sidebar
+	background-color: $coffeen
+	min-height: 100vh
+	width: 20vw
+	min-width: 242px
+	display: flex
+	flex-direction: column
+	color: #fff
+	position: relative
+	transition: width ease-in .3s
+	img
+		max-width: 100%
+	.ava
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 35px
+		height: 100%
+		max-height: 235px
+		h2
+			font-size: calc(0.6rem + 1vh)
+		p
+			font-size: 14px	
+			color: #a5622a
+
+	.aval
+		width: 100px
+		height: 100px	
+		margin-bottom: 20px
+		img
+			max-width: 100%
+.profl
+	width: 50px
+	height: 30px
+	margin-left: 20px
+	margin-top: 30px
+		
+.ico 
+	width: 100%
+	
+.menu
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	min-height: 320px
+	max-height: 600px
+	height: calc(100vh - 235px - 17vh - 60px)
+	margin-bottom: auto
+	font-size: calc(0.2rem + 1.2vh)
+	&-item
+		display: flex
+		//padding: 10px 0
+		//padding-bottom: 20px
+		position: relative
+		min-width: 74px
+	&-icon
+		margin: 0 25px
+		max-width: calc(1rem + 1.5vh)
+		min-width: calc(1rem + 1.5vh)
+		max-height: 50px
+		z-index: 2
+			
+	&-title
+		transition: all ease-in 0.5s
+.sizic
+	max-width: calc(1rem + 1.1vh)
+	min-width: calc(1rem + 1.1vh)
+.menu-item
+	position: relative
+	height: 70px
+	&.active:before
+		position: absolute
+		content: ""
+		width: 5px
+		height: 100%
+		background-color: $lite
+		top: 0
+		left: 0
+		transition: width ease-in 0.5s
+	&:hover:before
+		position: absolute
+		content: ""
+		width: 5px
+		height: 100%
+		background-color: $lite
+		top: 0
+		left: 0
+		transition: all ease-in 0.5s
+	&.active
+		.menu-title
+			color: $lite
+.menu-item
+	.menu-title
+		h2:hover
+			color: $lite
+	
+h1,h2,h3
+	line-height: 2
+	letter-spacing: 2px
+	margin-bottom: 0
+
+
+
+.ico-logo
+	position:	relative
+	display: flex
+	align-items: center
+	margin-bottom: 5px
+	&:before
+		content: ""
+		// position: absolute
+		display: block
+		width: 200px
+		height: 7vh
+		background-image: url(../img/_src/ico/mini-logo.png)
+		left: 0	
+		background-size: contain
+		background-repeat: no-repeat
+	
+		// bottom: -110px
+		transition: margin ease 0.6s
+	.mini-logo
+		width: 5vh
+		right: 20px
+		// bottom: -107px
+		margin: auto
+		position: absolute
+
+
+
+
+.hidden-bar
+	width: auto
+	min-width: 85px
+	max-width: 85px
+	transition: min-width ease .8s
+	.ava
+		visibility: hidden
+		width: 0
+		opacity: 0
+		height: 246px
+		transition: visibility ease-in 0.5s
+		
+	.menu
+		.menu-title
+			display: none
+			transition: all ease-in 0.5s
+
+	.menu-item
+		&.active:before	
+			width: 100%
+			z-index: 1
+			transition: width 0.5s ease-in
+
+		&:hover:before
+			position: absolute
+			content: ""
+			width: 100%
+	.ico-logo
+		position:	relative
+		.mini-logo
+			left: 0
+			right: 0
+		&:before
+			margin-left: -250px	
+			transition: margin ease 0.4s
+
+.menu-item
+	.nav
+		align-items: center
+		display: flex
+
+// Side-bar end
+
+
+// Header	
+
+
+
+.header
+	background-color: $accent
+	height: 8vh
+	display: flex
+	align-items: center
+	justify-content: flex-end
+
+
+.nav-menu
+	display: flex
+	margin: auto
+	&-item
+		padding: 0 20px
+		width: auto
+		font-size: 18px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: 1px
+		text-align: left
+		color: #ffffff
+		h2
+			margin-bottom: 0
+	
+.sing
+	width: max-content
+	margin-right: 5vw
+	a:hover
+		color: rgba(249,176,52,.8)
+.arrsin
+	display: flex
+	align-items: center
+	min-width: 126.5px
+	max-height: 36px
+	&:before
+		content: ""
+		background: url(../img/_src/ico/squaresing.svg)
+		width: 15px
+		height: 8px	
+		display: block
+		background-size: contain
+		z-index: 3
+		background-repeat: no-repeat
+		margin-right: 5px
+
+.wrapper
+	width: 100%
+	// Header end
+
+
+// Content 
+
+.box-item
+	display: flex
+	flex-direction: column
+	height: calc(46.01vh - 30px)
+	overflow: hidden
+	margin: 15px 0
+	border: 1px solid #ede8e4 
+	border-radius: 10px
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16)
+.box-title
+	display: flex
+	background: #fef8ea
+	line-height: 1.4
+	letter-spacing: 1.3px
+	text-align: left
+	color: #7d4516
+	h2
+		padding-left: 20px
+		padding-top: 5px
+		padding-bottom: 4px
+		font-size: calc(0.9rem + 0.6vh)
+		font-weight: 800
+
+.box-content
+	position: relative
+	height: 100%
+	display: flex
+	flex-direction: column
+.news-box
+	cursor: pointer
+	margin-top: 10px
+	margin-left: 8px
+	display: flex
+	margin-bottom: 8px
+	justify-content: space-between
+	max-height: 45%
+	overflow: hidden
+	.new-img
+		min-width: 100px
+		max-width: 100px
+		// width: 100px
+		overflow: hidden
+		// height: 100%
+		min-height: 100%
+		border-radius: 13px
+		border: solid 1px rgba(112, 60, 22, 0.1)
+		img
+			width: 100%
+			object-fit: cover	
+			min-height: 100%
+	.news-content
+		padding: 0 8px 
+		padding-bottom:
+		position: relative
+		height: 150px
+		overflow: hidden
+		h3
+			color: $accent
+			line-height: 1.2
+			font-size: 15px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			letter-spacing: normal
+			text-align: left
+			padding-bottom: 2px
+		p
+			font-size: 13px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #a5622b
+		span
+			// right: 8px
+			// top: 0
+			// position: absolute
+			font-size: 12px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+.Open-tariff-plan 
+	width: 141px
+	height: 27px
+	font-family: MyanmarMN
+	font-size: 19px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: left
+	color: #f9b034
+.open-tar
+	text-align: center
+	vertical-align: middle
+
+.Open-tariff-plan:hover 
+	width: 141px
+	height: 27px
+	font-family: MyanmarMN
+	font-size: 19px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: left
+	color: #f9b034
+
+
+.comming
+	font-size: 3vh
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.4
+	letter-spacing: normal
+	text-align: center
+	color: #2d191a
+	text-transform: uppercase
+.box-wrapcon
+	margin: 20px 8px
+	height: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	.wrap-tabonce
+		width: 100%
+		overflow: auto
+	.tabonce
+		width: 100%
+		padding: 0 15px
+		margin-bottom: 10px
+		.title
+			margin: 0
+			font-size: 16px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #2d191a
+			margin-bottom: 5px
+		.sttab
+			font-size: 15px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #7d4516
+		.wraptonce
+			display: flex
+			justify-content: space-between
+			border-bottom: solid 1px rgba(112, 60, 22, 0.3)
+			margin-bottom: 10px
+		.boldonce
+			font-size: 15px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #7d4516
+
+	.availaroy
+		width: 100%
+		margin-top: auto
+		border-top: solid 1px rgba(112, 60, 22, 0.3)
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-top: 20px
+
+		.avail-title
+			font-size: 2.5vh
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.43
+			letter-spacing: normal
+			text-align: left
+			color: #7d4516
+			text-transform: uppercase
+		.tarifff
+			display: flex
+			align-items: center
+			font-size: 31px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #7d4516
+			.orenplan
+				padding-right: 10px
+				font-size: 43px
+				color: #f9b034
+
+	.optarif
+		display: none
+		a
+			
+			font-size: 19px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+			padding: 30px 0
+			&:hover
+				text-decoration: underline
+
+.nonetarif
+	.tabonce
+		display: none
+	.optarif
+		display: block
+	.availaroy
+		margin-top: 20px
+		.tarifff
+			font-size: 64px
+			margin-top: 25px
+			.orenplan
+				font-size: 87px
+
+.box-history
+	padding: 8px 24px
+	height: 100%
+	display: flex
+	padding-left: 24px
+.box-history-table
+	display: flex
+	height: 100%
+	width: 50%		
+.box-biargramm
+	flex-direction: column
+	display: flex
+	height: 100%
+	width: 50%
+	align-items: center
+	justify-content: flex-end	
+	.dio-title
+		display: flex
+		width: 85%
+		justify-content: space-around
+		font-size: calc(0.4rem + 0.4vw)
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.44
+		letter-spacing: normal !important
+		text-align: center
+		color: #f9b034
+		a
+			text-align: center
+			display: flex
+			justify-content: center
+			h3
+				letter-spacing: normal
+	.diargmra
+		height: 300px
+		width: 300px
+		position: relative
+		display: flex
+		justify-content: center
+		&-title
+			position: absolute
+			margin-left: 0
+			align-self: center
+			h3
+				font-size: calc(1rem + 0.5vw)
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #a5622b
+			p
+				font-size: calc(0.6rem + 0.5vw)
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				text-align: center
+				color: #a5622a
+	.circle
+		display: block	
+		margin-right: -27px	
+		background: url(../img/_src/ico/circle.png)
+		width: 85%
+		height: 100%
+		background-position: center center
+		background-size: contain
+		background-repeat: no-repeat
+		margin: 0 auto
+
+.dio-title h3:nth-child(1)
+	color: #f8d496
+.dio-title h3:nth-child(3)
+	color: $accent
+
+.bar-open 
+	.news-box .news-content h3
+		font-size: 13px
+	.box-history
+		padding: 8px 14px
+	.box-card
+		padding: 20px 14px
+	.dio-title
+		font-size: calc(0.5rem + 0.2vw)
+	.table-history
+		td,.alileft
+			font-size: calc(0.5rem + 0.2vh)		!important
+		// .pay-ico
+		// 	margin-left: -20px			
+	.box-card .bffc
+		h4
+			font-size: 1.5vh
+		p
+			font-size: 12px
+	.box-card .card-item .score
+		font-size: 1.2vh
+		letter-spacing: 3px
+	.box-wrapcon .availaroy .avail-title
+		font-size: 2.2vh			
+	.box-title h2
+		font-size: calc(.7rem + .6vh)
+
+.table-history
+	width: 100%
+	overflow: hidden
+	table
+		width: 100%
+	tbody
+		flex-direction: column
+		display: flex
+		justify-content: space-around
+		.desc
+			display: flex
+			justify-content: space-around
+			background-color: #f7f4f2
+			td
+				position: relative
+				font-size: calc(0.5rem + 0.5vh)
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.47
+				letter-spacing: normal
+				text-align: left
+				color: #703c16
+				padding: 7px 0 0 0
+				width: 33.3%
+				
+			.alileft
+				//padding-right: 8px
+				font-size: calc(0.5rem + 0.5vh)
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.47
+				letter-spacing: normal
+				text-align: right
+				color: #a5622b
+				display: flex
+				justify-content: flex-end
+				.price
+					overflow: hidden
+					text-overflow: ellipsis
+					margin: 0px
+				.currency
+					text-align: center
+					width: 40px
+			.pay-ico
+			
+			.pay-ico:before
+				content: ''
+				background-image: url(../img/_src/ico/pay-ico.svg) 
+				background-repeat: no-repeat
+				width: 10px
+				height: 10px
+				display: block
+				background-size: cover
+				display: flex
+				margin-right: 10px
+				align-self: center
+				margin-left: -10px
+			.pay-ico,.trans-ico,.per-ico
+				display: flex
+				justify-content: center
+				font-size: calc(0.5rem + 0.6vh)
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.47
+				letter-spacing: normal
+				text-align: right
+				color: #a5622b
+			.trans-ico:before
+				content: ''
+				background-image: url(../img/_src/ico/trans-ico.svg) 
+				background-repeat: no-repeat
+				width: 10px
+				height: 10px
+				display: block
+				background-size: cover
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.per-ico:before
+				content: ''
+				background-image: url(../img/_src/ico/per-ico.svg) 
+				background-repeat: no-repeat
+				width: 8.4px
+				height: 10.6px
+				display: block
+				background-size: cover
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.pay-ico-Perevod:before
+				content: ''
+				background-image: url(../img/_src/ico/per-ico.svg) 
+				background-repeat: no-repeat
+				width:	10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.pay-ico-Transfer:before
+				content: ''
+				background-image: url(../img/_src/ico/per-ico.svg) 
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.pay-ico-Withdraw:before
+				content: ''
+				background-image: url(../img/_src/ico/trans-ico.svg)
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.pay-ico-Pay:before
+				content: ''
+				background-image: url(../img/_src/ico/pay-ico.svg)
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center		
+			.pay-ico-CreateQR:before
+				content: ''
+				background-image: url(../img/_src/ico/create-qr.svg)
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center	
+			.pay-ico-Qr_create:before
+				content: ''
+				background-image: url(../img/_src/ico/create-qr.svg)
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center
+			.pay-ico-Qcreate:before
+				content: ''
+				background-image: url(../img/_src/ico/create-qr.svg)
+				background-repeat: no-repeat
+				width: 10px
+				height: 12px
+				display: block
+				background-size: contain
+				display: flex
+				margin-right: 10px
+				align-self: center
+		.date-table
+			background-color: #f0eae6
+			border-radius: 10px 10px 0 0
+			margin-top: 10px
+			th
+				font-size: 10px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #703c16
+				padding: 3px 4px
+				padding-left: 10px
+
+
+.box-card
+	padding: 20px 24px
+	height: 100%
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	.card-item
+		padding: 10px 20px
+		padding-right: 8px
+		display: flex
+		flex-direction: column
+		border-radius: 9px
+		border: solid 1px rgba(112, 60, 22, 0.32)
+		height: 48%
+		position: relative
+		overflow: hidden
+		.score
+			font-size: 1.4vh
+		.ico-wal
+			position: absolute
+			font-size: 26px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1
+			letter-spacing: 9.1px
+			color: #f3cc30
+			bottom: 3px
+			right: 0px
+			width: 100%
+			text-align: right
+
+		.bitback:before
+			content: ""
+			width: 41px
+			height: 18px
+			font-size: 11px
+			background-image: url(../img/_src/ico/bitback.png)
+			font-weight: bold
+			background-size: cover
+			font-style: normal
+			font-stretch: normal
+			line-height: 0.64
+			letter-spacing: normal
+			text-align: center
+			color: #f9b034
+			display: block
+			position: absolute
+			left: 20px
+			bottom: 5px
+		.bitback:after
+			content: ""
+			font-size: 11px
+			background-image: url(../img/_src/ico/bb.svg)
+			background-repeat: no-repeat
+			display: block
+			position: absolute
+			right: 5px
+			bottom: 0px
+			width: 33px
+			height: 26px
+			background-size: contain
+
+		p
+			margin-bottom: 0
+		h4
+				// margin-bottom: 15px
+		h3
+			// margin-bottom: 20px			
+	.dolr
+		background-color: #a58a73
+		h4
+			font-size: 1.9vh
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+		p
+			font-size: 14px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.43
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+		h3
+			font-size: 18px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.44
+			letter-spacing: 6.3px
+			text-align: left
+			color: #ffffff
+	.bffc
+		background-color: #371f18
+		h4
+			font-size: 1.9vh
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			color: #ffffff
+		p
+			font-size: 14px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.43
+			letter-spacing: normal
+			text-align: left
+			color: #f8d496
+		h3
+			font-size: 18px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.44
+			letter-spacing: 6.3px
+			text-align: left
+			color: #f9b034
+
++media-breakpoint-down(sm)
+	.box-history
+		flex-direction: column
+		min-width: 0
+		align-items: center
+	.box-item
+		height: auto
+		.box-wrapcon-ind
+			height: 150px	
+
+		.card-item
+			height: 80%
+			min-height: 200px
+			margin-bottom: 20px
+		.box-history-table
+			width: 100%	
+
+
+.market-box
+	display: flex
+	flex-direction: column
+	height: 100%
+	width: 100%
+	padding: 20px 15px
+	.mark-title
+		display: flex
+		justify-content: space-between
+		font-size: 15px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.47
+		letter-spacing: normal
+		text-align: left
+		color: #703c16
+		.bfusd
+			&:before
+				content: ''
+				display: inline-block
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				margin-right: 5px
+				margin-bottom: 2px
+				background-color: #f9b034
+.char-box
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 100%
+	.course
+		display: flex
+		flex-direction: column
+		padding-top: 10px
+		h3
+			font-size: 34px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: center
+			color: #f9b034
+		span
+			font-size: 15px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.47
+			letter-spacing: 1.5px
+			text-align: center
+			color: #a58a73
+	.graff
+		height: 75%
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	.time-date
+		display: flex
+		flex-direction: row
+		justify-content: center
+		width: 100%
+		.date-box
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 8px
+			width: 42px
+			height: 39px
+			border-radius: 10px
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+			background-color: #a58a73
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+			h5
+				font-size: 15px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 2
+				letter-spacing: normal
+				text-align: left
+				color: #703c16
+				margin: 0
+		.act
+			background-color: #f9b034
+
+
+// Content end		
+
+.comsoon
+	background-color: #2d191a
+	height: 92vh
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	
+	.soon
+		font-size: 41px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		text-transform: uppercase
+
+
+.disable
+	display: none
+
+
+// Invest
+.box-item
+	.bga,.bgb,.bgc,.bgd,.bgi,.bgf
+		padding-top: 40px
+
+	.bgy
+		background-color: #f9b034
+		padding: 20px
+	.bga
+		background-color: #703c16
+	.bgb
+		background-color: #a5622a
+	.bgc
+		background-color: #f8d496	
+	.bgd
+		background-color: #a58a73
+	.bgi
+		background-color: #371f18
+	.bgf
+		background-color: #2d191a
+	.bgz
+		background: radial-gradient(ellipse at center, #a5622a 0%,#a5622a 22%,#a5622a 22%,#703c16 80%)
+		padding: 20px
+		img
+			width: 140px
+		.gift
+			display: flex
+			justify-content: center
+			align-items: center	
+	
+.colaceent
+	color: #f9b034
+
+.box-cont
+	color: #fff
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: 20px 
+	height: 100%
+	justify-content: space-between
+	podding-top: 40px
+	padding-bottom: 15px
+	position: relative
+	.bgy
+		background-color: #f9b034
+		justify-content: flex-start
+	.title-pay
+		font-size: 23px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.39
+		letter-spacing: normal
+		text-align: center
+		color: #f9b034
+		font
+			font-size: 18px
+		h3
+			line-height: 1.2	
+	.table-pay
+		width: 100%
+		table
+			width: 100%
+			margin-bottom: 20px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.2
+			letter-spacing: normal
+			text-align: left
+			color: #ffffff
+			.padl
+				width: 106px
+.centp
+	margin-left: 120px				
+// .button-pay
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	cursor: pointer
+// 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+// 	background-image: linear-gradient(to bottom, #95613b, #703c16)
+// 	border-radius: 30px
+// 	overflow: hidden
+// 	// padding: 7px 1px
+// 	width: 100%
+// 	max-width: 250px
+// 	min-height: 40px 
+
+.button-pay
+	text-align: center
+	min-width: 230px
+	border-radius: 30px
+	vertical-align: middle
+	padding: 8px 20px
+	min-height: 40px
+	line-height: 1
+	background-image: linear-gradient(to bottom,#95613b,#703c16)
+	font-size: 20px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	letter-spacing: 1.35px
+	text-align: center
+	color: #ffffff
+	border: none
+	align-self: center
+	z-index: 5
+	&:hover
+		background-image: linear-gradient(to bottom,#a2693f,#965322)
+	&:active
+		background-image: linear-gradient(to bottom,#7b4f2f,#562e11)
+.button-wih
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #7e635b, #371f18) !important
+	&:hover
+		background-image: linear-gradient(to bottom,#92736a,#563328)!important
+	&:active
+		background-image: linear-gradient(to bottom,#654f49,#371f18)!important
+.button-tra
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #604948, #251918) !important
+	&:hover
+		background-image: linear-gradient(to bottom,#795e5d,#4c3432)!important
+	&:active
+		background-image: linear-gradient(to bottom,#4a3736,#251918)!important
+.button-dep
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #6f5252, #2d191a) !important
+	&:hover
+		background-image: linear-gradient(to bottom,#7d5f5f,#4e2b2d)!important
+	&:active
+		background-image: linear-gradient(to bottom,#543d3d,#2d191a)!important
+.button-con
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #95613b, #703c16) !important
+
+.button-buy
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.61)
+	background-image: linear-gradient(to bottom, #f3efe8, #dbd0ba) !important
+	color: #2d191a
+	&:active
+		background-image: linear-gradient(to bottom,#e4dbcc,#bfb49d)!important
+	&:hover
+		background-image: linear-gradient(to bottom,#f7f4ef,#f1e8d8)!important
+.pay-text
+	display: inline-flex
+	font-size: 27px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	letter-spacing: 1.35px
+	text-align: center
+	color: #ffffff
+	margin: 0 
+
+
+.title-work
+		font-size: calc(0.7rem + 0.5vh + 0.5vw)
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: 1.35px
+		text-align: center
+		color: #371f18
+		padding-bottom: 1vh
+		padding-top: 20px
+.work-des
+		// font-size: 17px
+		// font-weight: normal
+		// font-style: normal
+		// font-stretch: normal
+		// line-height: 1
+		// letter-spacing: 1px
+		// text-align: left
+		// color: #371f18
+		// height: 115px
+		// overflow: hidden
+		// display: flex
+
+		font-size: calc(.1rem + 1vh + .3vw)
+		font-weight: 400
+		font-style: normal
+		font-stretch: normal
+		line-height: 1
+		letter-spacing: 1px
+		text-align: left
+		color: #371f18
+		min-width: 100%
+		display: -webkit-box
+		display: -webkit-flex
+		display: -ms-flexbox
+		margin: 4px 0
+		display: flex
+
+
+		
+		span
+			font-size: calc(0.1rem + .8vh + 1vw)
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.43
+			letter-spacing: 2.45px
+			text-align: center
+			color: #371f18	
+			align-self: flex-start
+			line-height: 1.2
+			padding-right: 9px
+
+.bar-open
+	.box-cont
+		.work-des
+			font-size: calc(.1rem + 0.8vh + .3vw)
+			span
+				font-size: calc(0.1rem + .2vh + 1vw)
+.box-cont .title-pay 
+	h3,h4
+		font-size: calc(0.5rem + 1vh + 0.5vw)
+
+.histabb
+	height: auto
+	min-height: calc(46vh - 30px)	
+	background-color: #2d191a
+.box-item .histaba
+	padding: 0 0
+	.onelinehis
+		background-color: rgba(165, 138, 115, .19)
+		padding:  20px 0
+		line-height: 3
+		font-size: calc(0.1rem + 0.5vh + .6vw)
+	.tablealls
+		width: 100%
+		font-size: calc(0.2rem + 0.5vh + .8vw)
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.45
+		letter-spacing: normal
+		text-align: left
+		color: #ffffff
+	.tac
+		line-height: 2.8vw
+		text-align: center
+
+// Invest end		
+
+// Settings 
+.gres 
+	height: calc(92vh - 30px)
++media-breakpoint-down(md)
+	.gres 
+		height: auto 
+	.box-item
+		height: auto
+
+.intpss
+	display: flex
+	.selecc
+		flex: 0
+		border-radius: 31px
+		border: solid 1px #a58a73
+		padding: 0 30px
+		padding-left: 10px
+	.tossa
+		margin: 0 10px
+		flex: 1	
+
+.title-box
+	min-height: 54px
+	display: flex
+	align-items: center
+	background-color: #ede8e4
+	h3
+		padding-left: 14px
+		font-size: 25px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #371f18
+.form-box .title-inp h4
+	min-width: 110px
+.form-box
+	display: flex
+	width: 100%
+	height: 100%
+	justify-content: center
+	padding: calc(0.3rem + 1vh) 20px
+	padding-bottom: 20px
+	form
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		.buttossa
+			display: flex
+			text-align: center
+			justify-content: center
+			width: 85%
+	.title-inp
+		display: flex
+		padding: 10px 0
+		align-items: center
+		position: relative
+		input,.selecc,.cherxs
+			border-radius: 25px
+			border: solid 1px #a58a73
+			// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+			background-color: #ffffff
+			padding: 4px 10px
+			font-size: 19px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+			width: 257px
+
+		.selecc
+			border-radius: 31px
+			-webkit-appearance: none
+		h4
+			margin: 0
+			margin-right: 16px
+			font-size: 18px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #a58a73
+.form-box
+	// .button-pay
+	// 	background-color: transparent
+	// 	border: none
+	// 	color: #fff
+	// 	font-size: 25px
+	// 	font-weight: bold
+	// 	font-style: normal
+	// 	font-stretch: normal
+	// 	line-height: 1.41
+	// 	letter-spacing: 1.35px
+	// 	text-align: center
+	// 	max-width: 225px
+	// 	cursor: pointer	
+
+.form-box .check h4
+	text-align: left
+	padding-right: 50px
+.check-sex
+	display: flex
+	justify-content: space-between
+	width: 400px
+	min-height: 36px
+	
+	
+	input[type="radio"]
+		opacity: 0
+		position: absolute
+		&:checked + .title-radio
+			background-color: #a5622a
+			color: #fff
+			transition: all ease 0.8s
+	.title-radio
+		width: 190px
+		border-radius: 31px
+		border: solid 1px #a58a73
+		background-color: #fff
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 19px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: center
+		color: #703c16
+		margin: 0
+		padding: 4px 0
+
+.help-block
+	position: absolute
+	background: orange
+	padding: 0 10px
+	border-radius: 15px
+	right: 0px
+	bottom: 100%
+.help-angular
+	content: ""
+	position: absolute
+	width: 15px
+	height: 10px
+	left: 50%
+	bottom: -20px
+	border: 10px solid transparent
+	border-top: 10px solid orange
+
+label
+	.title-radio
+		&:first-child
+			margin-right: 20px
+			
+
+.title-inp .cherxs
+	position: relative
+	border: 0 !important
+	box-shadow: none !important
+	align-items: center
+	.switch-for
+		margin-left: 50px
+		margin-bottom: 15px
+.gen
+	padding-right: 40px
+	.check-sex
+		margin-bottom: 10px
+		margin-top: 10px
+	.title-inp
+		margin-bottom: 0.2vh
+		input,.intpss,.cherxs
+			width: 400px
+		
+	+media-breakpoint-down(sm)
+		.check-sex,.intpss,.cherxs
+			width: 200px
+			flex-direction: column
+			.title-radio
+				margin-top: 20px
+		.title-inp
+			input,.selecc
+				width: 200px
+		.buttossa
+			.centp
+				margin: 0
++media-breakpoint-down(sm)				
+	.form-box
+		.title-inp
+			input,.intpss,.cherxs
+				width: 200px
+			.tossa
+				margin: 40px 0
+
+	.buttossa
+		.centp
+			margin: 0
+.check-box
+	flex-direction: column
+	justify-content: flex-start
+	.check
+		display: flex
+		justify-content: space-between
+		align-items: end
+		font-size: 19px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: right
+		color: #a58a73
+
+		input
+			width: 60px
+
+.switch
+	display: none
+	&:checked + .switch-for::before
+		right: 3px
+		transition-duration: 500ms
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.0)
+
+	&:checked + .switch-for::after
+		color: #f8d496
+		background-color: #7d4516
+		transition-duration: 500ms
+.switch-for
+	cursor: pointer
+	position: relative
+	&:after
+		content: "off\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0on"
+		width: 60px
+		height: 28px
+		border-radius: 16px
+		border: solid 1px rgba(249, 176, 52, 0.16)
+		background-color: #f8d496
+		position: absolute
+		top: -4px
+		right: 0
+		font-size: 8px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.5
+		letter-spacing: normal
+		text-align: center
+		color: #a5622a
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 1
+	&:before
+		content: ""
+		width: 24px
+		height: 24px
+		transition-duration: 500ms
+		background-size: contain
+		border-radius: 50%
+		position: absolute
+		background-image: url(../img/_src/ico/check-ico.png)
+		background-position: center 
+		right: 33px
+		top: -2px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+		z-index: 2
+
+.form-box	
+	.title-inp
+		.wallets
+			width: 150px
++media-breakpoint-down(lg)
+	.form-box .title-inp .wallets
+		width: 200px
+// Settings end	
+
+
+// Withdraw
+.wads
+	.box-content
+		padding-top: calc(1rem + 3vh) !important
+
+
+.hiau
+	height: 97%	
+.withdraw
+	.box-title
+		display: flex
+		flex-direction: column
+		background-color: #4c3329
+		h2
+			color: #fff
+			padding-bottom: 0
+		p
+			font-size: 17px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.45
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+			padding-left: 20px
+	.box-content
+		background-color: #371f18
+		padding: calc(1rem + 1vh) 14px
+		display: flex
+		align-items: center
+
+	.box-form
+		display: flex
+		justify-content: center	
+		flex-direction: column
+		align-items: flex-start
+		height: 100%
+		h3
+			width: 100px
+			margin-right: 40px
+		.inp-w
+			margin-bottom: 40px
+			display: flex
+			justify-content: center
+			font-size: 19px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #ffffff
+			align-items: center
+			input
+				box-sizing: border-box
+				border-radius: 11px
+				-webkit-backdrop-filter: blur(14px)
+				backdrop-filter: blur(14px)
+				border: solid 1px #ffffff
+				background-color: transparent
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1
+				letter-spacing: normal
+				padding: 20px 30px
+				padding-bottom: 17px
+				margin: 0 15px
+				color: #ffffff
+				&:focus
+					border: solid 1px #f9b034
+			.check-paysys
+				display: flex
+				justify-content: space-between
+				width: auto
+				input[type="radio"]
+					opacity: 1
+					display: none
+					&:checked + .title-radio
+						transition: all ease 0.8s
+						border: solid 1px #f9b034
+				.title-radio
+					border-radius: 31px
+					border: solid 1px #a58a73
+					background-color: transparent
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 17px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.42
+					letter-spacing:	1px
+					text-align: center
+					color: #fff
+					border-radius: 11px
+					-webkit-backdrop-filter: blur(14px)
+					backdrop-filter: blur(14px)
+					border: solid 1px #ffffff
+					margin:	0 15px
+					cursor: pointer
+					position: relative
+					.chektit
+						margin: 21px 20px
+					h4
+						margin: 0
+					span
+						font-size: 10px
+						font-weight: normal
+						font-style: normal
+						font-stretch: normal
+						line-height: 1.42
+						letter-spacing: normal
+						text-align: center
+						color: #ffffff
+						position: absolute
+						bottom: -18px
+.fsaa
+	width: 265px
+	position: absolute
+	font-size: 10px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: left
+	color: #ffffff
+	margin: 0 27px
+	margin-top: 3px
+	display: flex
+	justify-content: space-between
+
+.pin-w
+	width: auto
+
+.withdraw
+	.centp
+		margin-top: auto
+		font-size: 27px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: 1.35px
+		text-align: center
+		color: #ffffff
+		background-color: transparent
+		border: none
+
+.money-box
+	justify-content: center
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	font-size: 24px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: center
+	color: #a58a73
+	.money-i
+		margin-bottom: 20px
+		h3
+			font-size:	calc(1em + 0.5vw)
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+	.acce
+		color: #f9b034
+.withdraw
+	.box-title
+		position: relative
+		display: grid
+		a
+			position: absolute
+			span
+				position: absolute
+				right: 25px
+				top: 35%				
+				font-size: 20px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1
+				letter-spacing: -1px
+				text-align: left
+				color: #a58a73
+	.box-lastop
+		width:	100%
+		height: 100%
+		.itemlast
+			display: flex
+			justify-content: space-between
+			font-size: 19px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+			margin-bottom: 15px
+			.sell
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				color: #f9b034
+			.currency
+				text-align: center
+				width: 45px	
+			.c
+				color: #a58a73
+.hiau
+	&:before
+		content: ''
+		position: absolute
+		background-image: url(../img/_src/ico/bobs.svg) 
+		background-repeat: no-repeat
+		display: block
+		background-size: cover
+		width: 86px
+		height: 27px
+		right: 20px
+		bottom: 20px
+
+	&:after
+		content: ''
+		position: absolute
+		background-image: url(../img/_src/ico/stick.svg) 
+		background-repeat: no-repeat
+		display: block
+		width: 82px
+		height: 49.7px
+		background-size: cover
+		right:	20px
+		top: 20px	
+.withdraw .box-form .pin input
+	width: 135px		
+
+
++media-breakpoint-down(xl)
+	.withdra
+		width: 50%
++media-breakpoint-down(lg)
+		 		
++media-breakpoint-down(md)
+	.inp-wrapps
+		text-align: center
+	.withdraw 
+		.box-form
+			align-items: center
+			width: 100%
+			.inp-w
+				flex-direction: column
+				input
+					margin-bottom: 20px
++media-breakpoint-down(sm)
+	.withdraw
+		.box-form
+			.inp-wrapps
+				text-align: center
+				.box-valla
+					font-size: 16px
+					text-align: center
+					h4
+						text-align: center
+			input.button-pay.centp
+				margin-left: 0 !important
+			h3
+				text-align: center
+				margin-right: 0	
+			.inp-w
+				width: 100%
+				.wpad
+					width: 100%
+					input
+						width: 100%
+						margin: 0
+				input
+					width: 100%
+					margin-bottom: 20px
+				.check-paysys
+					width: 100%
+					flex-direction: column
+					flex-wrap: wrap
+					input
+						margin: 0
+						margin-bottom: 20px
+					.title-radio
+						margin: 0
+						margin-bottom: 20px	
+
+// Withdraw end	
+
+
+
+
+// Deposit	
+.cancelt
+	margin-top: -125px	
+
+
+.deposit 
+	.acce
+		display: none
+	.box-form .inp-w .check-paysys .title-radio .razm
+		margin: 21px 62px
+.centa
+	align-self: center
+.razm
+	margin: 0px 85px
+// Deposit end	
+
+
+.marlastel
+	margin-top: 30px
+
+
+// Available	
+.availa
+	border-radius: 16px
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+	background-color: #251918
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	.box-cards
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		justify-content: center
+		.item-card
+			min-width: 300px
+			padding: 10px 15px
+			max-height: 170px
+			height: 100%
+			margin: 20px
+			border-radius: 9px
+			box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.69)
+			border: solid 1px rgba(249, 176, 52, 0.32)
+			background-color: #371f18
+			position: relative
+			.ico-card
+				width: 50px
+				height: 45px
+				background-size: contain
+				margin-left: auto
+				background-image:	url(../img/_src/ico/bb.svg)
+				background-repeat: no-repeat
+				display: flex
+				justify-content: flex-end
+				align-item: flex-end
+			span
+				margin-bottom: 15px
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				text-align: center
+				color: #ffffff
+			h4
+				font-size: 14px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				text-align: left
+				color: #f8d496
+				margin-top: 15px
+
+			p
+				font-size: 18px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.44
+				letter-spacing: 6.3px
+				text-align: left
+				color: #f9b034
+			&-1
+
+			&-2
+				border: solid 1px rgba(112, 60, 22, 0.32)
+				background-color: #a58a73
+				span
+					color: #703c16
+				h4
+					color: #f9b034	
+				p
+					color: #fff
+				.ico-card
+					background-image: none
+					right: 10px
+					&:before
+						content: "$"
+						font-size: 26px
+						font-weight: 900
+						font-style: normal
+						font-stretch: normal
+						color: #f3cc30
+						display: inline-block
+						margin-top: auto
+
+			&-3
+				border: solid 1px rgba(112, 60, 22, 0.32)
+				background-color: #371f18
+				span
+					visibility: hidden
+				h4
+					visibility: hidden
+				p
+					font-size: 16px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.44
+					letter-spacing: normal
+					color: #f9b034
+					text-align: center
+				.ico-card
+					background-image: none
+					right: 10px
+					&:before
+						content: "+"
+						font-size: 40px
+						font-weight: 900
+						font-style: normal
+						font-stretch: normal
+						color: #f3cc30
+						display: inline-block
+						margin-top: auto
+
+
+.item-card
+	border-radius: 16px
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+	background-color: #2d191a
+	height: 100%
+	font-size: 20px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.4
+	letter-spacing: normal
+	color: #a58a73
+	padding: 20px
+	.buts
+		max-width: 215px
+		background: url(../img/_src/but-pay.png)
+		background-repeat: no-repeat
+		background-size: contain
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 55px
+		width: 100%
+		background-position-x: center
+	.btn-card
+		display: flex
+		justify-content: center
+		align-items: flex-end
+
+
+.water-mark
+	&:before
+		content: ''
+		position: absolute
+		background-image: url(../img/_src/ico/bobbbs.svg) 
+		background-repeat: no-repeat
+		display: block
+		background-size: cover
+		width: 75px
+		height: 25px
+		right: 20px
+		bottom: 25px
+		z-index: 3
+
+	&:after
+		content: ''
+		position: absolute
+		background-image: url(../img/_src/ico/stick.svg) 
+		background-repeat: no-repeat
+		display: block
+		width: 75px
+		height: 45px
+		background-size: cover
+		right:	20px
+		top: 25px
+		z-index: 3
+
+.card-wal
+	padding: 40px 40px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+		
+	&-2
+		background-color: #371f18
+	&-3
+		background-color: #251918
+	h4
+		text-align: center	
+		margin-top: auto
+	.img-ico
+		margin: auto
+		margin-bottom: 40px
+		.ico-width
+			width: 40px
+// Available end	
+
+// Status rang
+
+.i-ran
+	padding: 0 45px
+	padding-top: 35px
+	padding-bottom: 30px
+	color: #fff
+	display: flex
+	flex-direction: column
+	h3
+		font-size: 20px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034
+
+	&1
+		background-color: #371f18
+	&2
+		background-color: #2d191a
+	&3
+		background-color: #703c16	
+	.desci
+		margin-top: 25px
+		max-width: 370px
+		font-size: 18px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.45
+		letter-spacing: normal
+		text-align: left
+	.box-conti
+		display: flex
+		justify-content: space-between
+		.imgi
+			img
+				width: 27vh
+	.but-i
+		// background: url(../img/_src/but-pay.png)
+		position: absolute
+		width: 210px
+		min-height: 55px
+		height: 55px
+		background-repeat: no-repeat
+		background-size: contain
+		bottom: 40px
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			span
+				font-size: 20px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.41
+				letter-spacing: 1.35px
+				text-align: center
+				color: #ffffff
+.lineimrow
+	margin-top: -18px
+.butab
+	position: absolute
+	bottom: 40px
+// Status rang end
+
+
+// qr
+.tableh
+	display: flex
+	justify-content:	space-between
+	margin-bottom: 10px
+	.active
+		font-size: 14px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034
+	.notprinted
+		font-size: 14px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: right
+		color: #703c16
+	.inactive		 
+		font-size: 14px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: center
+		color: #a58a73
+	.tabtitle
+		width: 140px
+		font-size: 16px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: center
+		color: #a58a73
+	.minwidth
+		width: 90px
+	.timea
+		font-size: 14px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #a5622b
+.padn
+	padding: 10px
+	text-align: center
+.tapd
+	width: 140px
+	display: flex
+	justify-content: center
+
+.hi1
+	height: 96.7% !important
+.actte
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: right
+	color: #f9b034
+.boldbff
+	font-size: 14px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: right
+	color: #371f18
+.wraps
+	display: flex
+.no-wasp
+	padding: 0
+
+.centrs	
+	align-items: center
+	display: flex
+	justify-content: center
+	flex-direction: column
+.form-box .cesafe
+	height: 100%
+	align-items: center
+
+.box-house
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-end
+	h4
+		font-size: 25px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034
+		margin: 0
+		
+	span
+		font-size: 17px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: 1.9px
+		text-align: left
+		color: #a58a73
+		margin-bottom: 70px
+	
+
+
+
+.polzun
+	display: flex
+	flex-direction: column
+	width: 450px
+	background-color: #fff
+	margin-bottom: 50px
+	position: relative
+
+	ul
+		display:	inline-flex
+		justify-content: space-between
+		padding: 20px 0px
+		li
+			font-size: 19px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: left
+			color: #9f5e29
+			// &:before
+			// 	width: 4px
+			// 	content: ""
+			// 	height: 4px
+			// 	display: block
+			// 	background: #f9b034
+			// 	margin: 0 auto
+			// 	position: absolute
+			// 	z-index: 0
+			// 	top: 9px
+			// 	border-radius: 50%
+			// 	z-index: 1
+
+	input[type=range]
+		-webkit-appearance: none
+		background-color: #fff
+		border-radius: 20px
+		border: none
+		//border: solid 1px rgba(125, 69, 22, 0.4)
+		// background-image: linear-gradient(267deg, #703c16, #a5622b)
+		background-image: url(../img/_src/ico/rangea.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		width: 100%
+		background-position: center
+		height: 20px	
+	input[type='range']::-webkit-slider-thumb 
+		-webkit-appearance: none
+		background: url(../img/_src/ico/rangeb.svg)
+		background: url(../img/_src/ico/rangeset.svg)
+		background: url(../img/_src/ico/check-ico.png)
+		background-repeat: no-repeat
+		background-size: contain
+		width: 45px
+		height: 45px
+		border-radius: 50%
+		cursor: pointer
+		z-index: 3
+
+
+.setvalue
+	display: flex
+	align-items: center
+	.box-valla
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		margin: 0 30px
+	h4
+		font-size: 0px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #a5622a
+	span
+		font-size: 0px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034
+		i
+			font-size: 0px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+			margin-right: 10px
+
+
+.but-con
+	span
+		margin: auto
+		font-size: 20px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.41
+		letter-spacing: 1.35px
+		text-align: center
+		color: #ffffff
+
+.box-qr
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	
+	.qrimg
+		width: 160px
+		height: 22vh
+		img
+			width: 100%
+			height: 100%
+	.printsa
+		font-size: 12px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.47
+		letter-spacing: normal
+		text-align: center
+		color: #f8d496
+		margin-bottom: -20px
+		b
+			font-size: 13px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.47
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+
+.brovns
+	background-color: #371f18
+	.title-box
+		background-color: #4c3329
+		display: flex
+		justify-content: space-between
+		h3
+			color: #fff
+		span
+			font-size: 20px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #ffffff
+			padding-right: 15px
+
+.box-stats
+	display: flex
+	margin-top: 50px
+	width: 100%
+	justify-content: space-between
+	height: 105px
+	max-width: 310px
+	.first-elem,.two-elem,.three-elem
+		text-align: center
+	.two-elem
+		font-size: 55px
+		color: #fff
+		align-self: flex-end
+		line-height: 0.9
+		font-weight: 900
+	.creat
+		font-size: 22px
+		font-size: calc(1rem + 1.2vh)
+		font-weight: 700
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		color: #f9b034
+	.printe
+		font-size: 22px
+		font-size: calc(1rem + 1.2vh)
+		font-weight: 700
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		color: #a58a73
+	.creatnum
+		font-size: 55px
+		font-weight: 700
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		color: #f9b034
+	.printnum
+		font-size: 55px
+		font-weight: 700
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		color: #a58a73
+.box-stat
+	width: 100%
+.titlestat
+	display: flex
+	//width: 300px
+	justify-content: space-between
+	padding-top: 30px
+	h4
+		font-size: 25px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034	
+	span
+		font-size: 25px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.4
+		letter-spacing: normal
+		text-align: left
+		color: #a58a73
+		//padding-right: 14px
+.stats-w
+	display: flex
+	justify-content:	space-around	
+	font-size: 65px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	text-align: left
+	color: #ffffff
+	i
+		font-size: 60px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #f9b034
+	b
+		font-size: 60px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #a58a73
+	h5
+		width: 100%
+		display: flex
+		justify-content: space-around
+// qr end
+
+
+// Representant
+.browns
+	background-color: #2d191a
+	height: 89.6vh
+	.title-box
+		background-color: #442e2b
+		flex-direction: column
+		align-items: flex-start
+		color: #fff
+		padding: 17px 0
+		letter-spacing: 1px
+		h3
+			color: #fff
+			font-size: 24px
+		p
+			padding-left: 14px
+			font-size: 16px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.45
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+	.box-content
+		align-items: center		
+	.box-form
+		width: 600px
+		height: 100%
+		padding: 30px 0
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.item-form
+			display: flex
+			align-items: center
+			padding: 15px 0
+			.img-file
+				width: 79px
+				height: 79px
+				border-radius: 10px
+				border: solid 1px rgba(249, 176, 52, 0.16)
+				background-color: #a58a73
+				position: relative
+				display: flex
+				justify-content: center
+				align-items: center
+				background-position: center center
+				background-size: cover
+				&:before
+					content: ""
+					width: 27px
+					height: 27px
+					background: url(../img/_src/ico/pluss.svg)
+					background-size: contain
+					position: absolute
+					bottom: -10px
+					right: -10px
+					background-repeat: no-repeat
+				img
+					// height: inherit
+					width: inherit
+					border-radius: 10px
+					background-color: #a58a73
+
+			.box-inpfile
+				display: flex
+				width: 100%
+				justify-content: space-between
+			.title-inpp
+				margin-right: 15px
+				width: 190px
+				font-size: 19px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.42
+				letter-spacing: normal
+				color: #ffffff
+				span
+					font-size: 14px
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.47
+					letter-spacing: -0.23px
+					text-align: left
+					color: #a58a73
+				.wpanspan
+					padding-left: 10px	
+				h4
+					text-align: right
+					margin: 0
+			input
+				width: 100%
+				border-radius: 31px
+				border: solid 1px #a58a73
+				background-color: transparent
+				padding: 6px 10px
+				color: #fff
+				line-height: normal
+				&::-webkit-input-placeholder
+					font-size: 16px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					line-height: normal	!important
+					letter-spacing: normal
+					text-align: left
+					color: #a58a73
+					opacity: 0.4
+			input[type="file"]
+				display: none	
+	// .button-pay
+	// 	background-color: transparent
+	// 	border: 0
+	// 	font-size: 27px
+	// 	font-weight: bold
+	// 	font-style: normal
+	// 	font-stretch: normal
+	// 	line-height: 1.41
+	// 	letter-spacing: 1.35px
+	// 	text-align: center
+	// 	color: #ffffff
+	// 	align-self: center
+.checkpriv
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 30px 0
+	.title-inp
+		margin-left: 100px
+	.switch-for:after
+		background-color: #a58a73
+		content: ""
+	h5
+		margin: 0
+		margin-top: 10px
+		margin-left: 20px
+		font-size: 16px
+		font-weight: normal
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.44
+		letter-spacing: normal
+		text-align: left
+		color: #a58a73
+
+.backlink
+	position: absolute
+	left: 10px
+	top: 20px
+.backbut
+	position: absolute
+	left: 10px
+	top: 20px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 18px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1
+	letter-spacing: normal
+	text-align: left
+	color: #ffffff
+	&:before
+		content: ""
+		border: 10px solid transparent
+		border-right: 15px solid #fff
+		display: block
+		width: 0
+		height: 0
+		margin-right: 10px
+	a
+
+.inp-wrapps
+	display: flex
+	flex-direction: column
+	justify-content: center
+	font-size: 29px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.41
+	letter-spacing: 1.45px
+	text-align: right
+	color: #d1c5b0
+	align-items: center
+	width: 95%
+	h4
+		margin-top: 50px
+		margin-bottom: 60px
+	.polzun
+		display: flex
+		flex-direction: column
+		background-color: #fff
+		margin-bottom: 50px
+		border-radius: 20px
+		background: transparent
+		width: 85%
+		margin-bottom: 0
+
+		input[type=range]
+			margin: auto
+			-webkit-appearance: none
+			position: relative
+			overflow: hidden
+			height: 40px
+			cursor: pointer
+			border-radius: 20px
+			width: 100%
+			backdrop-filter: blur(14px)
+			border: solid 2px #dbd0ba
+			background: transparent
+
+		input[type='range']::-webkit-slider-thumb 
+			-webkit-appearance: none
+			background: url(../img/_src/ico/rangeb.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			cursor: pointer
+
+		input[type=range]::-webkit-slider-runnable-track
+			background: transparent
+
+
+		input[type=range]::-webkit-slider-thumb
+			-webkit-appearance: none
+			width: 20px
+			height: 40px
+			background: #dbd0ba
+			box-shadow: -100vw 0 0 100vw #dbd0ba
+
+
+		input[type=range]::-moz-range-track
+			height: 40px
+			background: #ddd
+
+		input[type=range]::-moz-range-thumb
+			background: #fff
+			height: 40px
+			width: 20px
+			border: 3px solid #999
+			border-radius: 0 !important
+			box-shadow: -100vw 0 0 100vw dodgerblue
+			box-sizing: border-box
+
+		input[type=range]::-ms-fill-lower
+			background: dodgerblue
+
+		input[type=range]::-ms-thumb
+			background: #fff
+			border: 2px solid #999
+			height: 40px
+			width: 20px
+			box-sizing: border-box
+
+		input[type=range]::-ms-ticks-after, input[type=range]::-ms-ticks-before
+			display: none
+
+		input[type=range]::-ms-track
+			background: #ddd
+			color: transparent
+			height: 40px
+			border: none
+
+		input[type=range]::-ms-tooltip
+			display: none	
+	.curren
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h5
+			font-size: 26px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #f8d496
+		span
+			font-size: 28px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: right
+			color: #f8d496
+
+.contswrap 
+	.box-content
+		background-color: #2d191a !important
+		.box-form
+			width: 100%
+			display: flex
+			align-items: center
+			height: 100%
+			justify-content: space-between
+	.indik
+		margin-top: 10px
+		display: flex
+		justify-content: space-between
+		font-size: 19px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.42
+		letter-spacing: normal
+		text-align: left
+		color: #dbd0ba
+	.box-valla
+		h4
+			font-size: 25px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: right
+			color: #d1c5b0
+			text-transform: uppercase
+			margin-bottom: 0
+		span, i
+			font-size: 50px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #ffffff
+	.button-pay	
+		// background-image: url(../img/_src/but-buy.svg)
+		// background-color: transparent	
+		// border: none
+		// font-size: 27px
+		// font-weight: bold
+		// font-style: normal
+		// font-stretch: normal
+		// line-height: 1.41
+		// letter-spacing: 1.35px
+		// text-align: center
+		// color: #2d191a
+		// cursor: pointer
+
+
+
+	 		
++media-breakpoint-down(md)
+	
++media-breakpoint-down(sm)
+	.browns .box-form
+		width: 90%
+	.browns .box-form .item-form	
+		flex-direction: column
+	.browns .box-form .item-form .title-inpp h4	
+		text-align: center
+	.browns
+		height: auto
++media-breakpoint-down(xs)
+// Representant end
+
+// Popaps
+.overlay_popup
+	display: none
+	position:	fixed
+	z-index: 999
+	top:	0
+	right:	0
+	left:	0
+	bottom:	0
+	&:before
+		content: ""
+		display:	block
+		position:	fixed
+		z-index: 999
+		top:	0
+		right:	0
+		left:	0
+		bottom:	0
+		background:	#000
+		opacity:	0.5
+
+.popap
+	transition: all ease 1s
+	display: none
+	.boxpop
+		position: absolute
+		border-radius: 16px
+		box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
+		border: solid 2px rgba(112, 60, 22, 0.3)
+		background-color: #371f18
+		color: #fff
+		padding: 10px 10px
+		margin-left: auto
+		margin-right: auto
+		display: block
+		position: relative
+		z-index: 1000
+		margin: 15% 25% 0 25%
+		width: 50%
+		display: flex
+		flex-direction: column
+		.buttrise
+			max-width: 225px 
+			width: 100%
+			border: 2px solid #f9b034
+			border-radius: 20px
+			font-size: 20px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			margin-left: auto
+			margin-right: auto
+			line-height: 1.41
+			letter-spacing: 1.35px
+			text-align: center
+			color: #ffffff
+			margin-bottom: 50px
+			background: rgb(249,176,52)
+			background: linear-gradient(0deg, rgba(249,176,52,1) 70%, rgba(243,239,232,1) 105%)
+			a
+				display: flex
+				padding: 5px 40px
+				justify-content: center
+
+
+		h3
+			font-size: 30px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: center
+			color: #ffffff
+			margin-bottom: 100px
+			margin-top: 60px 
+		.close
+			position: absolute
+			border-radius: 50%
+			border: solid 1px rgba(249, 176, 52, 0.16)
+			background-color: #f9b034
+			width: 30px
+			height: 30px
+			display: flex
+			align-self: flex-end
+			margin-right: -50px
+			&:before, &:after
+				margin-left: auto
+				margin-right: auto
+				position: absolute
+				content: ' '
+				height: 20px
+				width: 2px
+				left: 50%
+				margin-left: -1px
+				top: 50%
+				margin-top: -10px
+				background-color: #371f18
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)			
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				z-index: 6
+
++media-breakpoint-down(xl)
+	.popap .boxpop
+		width: 50%
++media-breakpoint-down(lg)
+	.popap .boxpop
+		width: 60%			 		
++media-breakpoint-down(md)
+	.popap .boxpop
+		width: 60%	
++media-breakpoint-down(sm)
+	.box-conti
+		flex-direction: column
+		align-items: center
+		margin-bottom: 10px
+	.but-i
+		align-self: center	
+	.imgi
+		text-align: center
+		img
+			width: 90%
+
+	.popap .boxpop
+		margin: 0 auto
+		margin-top: 15%
+		width: 90%	
+
+.newspup
+	transition: all ease 1s
+	.boxpop
+		width: 65%
+		border: solid 3px rgba(55, 31, 24, 0.24)
+		background-color: #ffffff
+		color: #371f18
+		margin: auto
+		margin-top: 10%
+
+		.headnews
+			display: flex
+			position: relative
+			font-size: 22px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+			h4
+				padding: 10px
+			span
+				padding: 10px
+
+			.close
+				right: 50px
+				top: 0px
+	.newscont
+		display: flex
+		p
+			font-size: 18px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: left
+			color: #371f18
+			padding: 10px
+			flex: 4
+			overflow-y: auto
+			max-height: 500px
+		.newsim
+			text-align: center
+			margin: 10px
+			border-radius: 16px
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+			border: solid 1px rgba(112, 60, 22, 0.3)
+			overflow: hidden
+			flex: 1
+			width: 100%
+			height: 300px
+			width: 100%
+			position: relative
+			.img-cover
+				object-fit: cover
+				height: 100%
+				width: 100%
++media-breakpoint-down(xl)
+	.newspup .boxpop
+		width: 85%
++media-breakpoint-down(lg)
+	.newspup .boxpop
+		width: 90%			 		
++media-breakpoint-down(md)
+	.newspup .newscont
+		flex-direction: column-reverse
+		.newsim
+			margin: 0
+			height: 250px
+			img
+				width: 100%
+	.newspup .boxpop
+		max-height: 100%
+		margin-top: 2%
+		width: 90%	
++media-breakpoint-down(sm)
+	.newspup .newscont
+		flex-direction: column-reverse
+	.newspup .newscont	p
+		max-height: 44vh
+		overflow-x: auto
++media-breakpoint-down(xs)
+	.newspup .newscont
+		flex-direction: column-reverse
+	.newspup .newscont	p
+		max-height: 44vh
+		overflow-x: auto
+
+			
+// Popaps end
+
+
+// History
+.tabboxhis
+	display: flex
+	align-items: center
+	margin-left: 100px
+
+	.tabhis
+		margin-right: 60px
+		font-size: 15px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.47
+		letter-spacing: normal
+		text-align: center
+		color: #7d4516
+		position: relative
+		cursor: pointer
+
+	.active
+		color: #f9b034	
+		&:before
+			position: absolute
+			content: ""
+			width: 6px
+			height: 6px
+			display: flex
+			background-color: #f9b034	
+			border-radius: 50%
+			bottom: -5px
+			left: 45%
+
+.tabhihh
+	width: 100%
+	border-radius: 0
+	tbody .date-table
+		border-radius: 0
+		th
+			font-size: 14px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.47
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+			padding: 4px 4px
+			padding-left: 16px
+	.desc
+		.pay-ico
+			span
+				text-align-last: left
+				max-width: 80px
+				width: 100%
+		.sourcehis
+			max-width: 30%
+			width: 100%
+			overflow: hidden
+		.timhis
+			width: 15%
+			min-width: 80px
+		.numbes
+			width: 20%	
+		.numbescore
+			max-width: 20%
+			width: 100%
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+			&:before
+				content: "№"
+				font-size: 11px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.44
+				letter-spacing: normal
+				text-align: left
+				color: #a58a73
+				padding-right: 5px
+
+.nowater-mark 
+	&:before
+		display: none
+	&:after
+		display: none	
++media-breakpoint-down(sm)		
+	.wraptitle
+		flex-wrap: wrap
+		.tabboxhis
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			.tabhis
+				margin: 0 5px
+	.tabhihh .desc .sourcehis
+		max-width: 20%				
++media-breakpoint-down(xs)
+	.tabhihh
+		.desc
+			.pay-ico
+				width:	40px
+				span
+					display: none
+	.numbescore
+		&:before
+			display: none
+	.tabhihh .desc .sourcehis
+		max-width: 15%	
+// History end
+
+
+
+// News
+
+.wrapimgnews
+	max-height: 100%
+	min-height: 100%
+	position: relative
+	cursor: pointer
+	.overlaynews
+		display: flex
+		background: rgba(0, 0, 0, 0.8)
+		width: 100%
+		max-width: 100%
+		min-height: 100%
+		z-index: 200
+		img
+			z-index: 1
+			object-fit: cover	
+			opacity: 0.7
+			min-height: 100%
+			width: 100%
+			height: 100%
+	.newstitle
+		height: 50%
+		width: 100%
+		position: absolute
+		bottom: 0
+		background-color: rgba(255, 255, 255, 0.76)
+		padding: 7px 9px
+		z-index: 5
+		.datenews
+			font-size: 12px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.42
+			letter-spacing: normal
+			text-align: right
+			color: #703c16
+			width: 20%
+			min-width: 80px
+			margin-left: auto
+		.titlenews
+			font-size: 15px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.47
+			letter-spacing: normal
+			text-align: left
+			color: #703c16
+			display: flex
+			justify-content: space-between
+			margin-bottom: 10px
+		.newsdesc
+			font-size: 13px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.46
+			letter-spacing: normal
+			text-align: left
+			color: #a5622b
+			padding-bottom: 0
+			overflow: hidden
+			height: 84%
+.heats
+	position: absolute
+	right: 10px
+	top: 10px
+	display: block
+	z-index: 10
+	img
+		width: 30px
+		height: 26.6px			
+// News end	
+
+// 2fa
+
+.contswrap .box-content .tofa
+	width: 90%
+	.app-title
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		border-bottom: solid 1px #5c4431
+		padding-bottom: 10px
+		margin-bottom: 20px
+		.titleapp
+			font-size: 27px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: left
+			color: #ffffff
+			width: 615px
+		.buttonapp
+			display: flex
+			
+	.two-factor
+		display: flex
+		align-self: flex-start
+		.factoryaut
+			margin-left: 60px
+			.title-authi
+				text-transform: uppercase
+				font-size: 25px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #a58a73
+			.disss,	.actt
+				padding-right: 20px
+			.itmcont
+				margin-bottom: 30px
+				font-size: 25px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				input
+					border-radius: 31px
+					border: solid 1px #a58a73
+					background-color: transparent
+					font-size: 19px
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.42
+					letter-spacing: normal
+					text-align: left
+					color: #ffffff
+					padding: 8px 40px
+			.disss
+				font-size: 25px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #e25050
+			.actt
+				font-size: 25px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.4
+				letter-spacing: normal
+				text-align: left
+				color: #23eaa4
+	.buttossa
+		margin-bottom: 35px
+	.attention
+		margin-top: 20px
+		border-top: solid 1px #5c4431
+		.attentio
+			font-size: 25px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.4																													
+			letter-spacing: normal
+			text-align: left
+			color: #f9b034
+			margin-top: 10px
+		.desc-attent
+			font-size: 20px
+			font-weight: normal
+			font-style: normal
+			font-stretch: normal
+			line-height: 1.45
+			letter-spacing: normal
+			text-align: left
+			color: #a58a73
+			i
+				color: #f9b034
+				text-decoration: underline
+				font-style: normal
+.box-title
+	.twofas
+		margin-top: 10px
+		margin-bottom: 10px			
+
+
++media-breakpoint-down(md)
+	.contswrap .box-content .tofa .app-title .titleapp
+		font-size: 18px
++media-breakpoint-down(sm)
+	.contswrap .box-content .tofa .two-factor .factoryaut .title-authi
+		font-size: 23px
+	.app-title,.two-factor
+		flex-direction: column
+	.qrprint
+		text-align: center
+		margin-bottom: 20px	
+	.contswrap .box-content .tofa .two-factor .factoryaut
+		margin: 0
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.contswrap .box-content .tofa .buttossa
+		display: flex
+		justify-content: center
+	.contswrap .box-content .tofa .two-factor
+		width: 100%
+		.factoryaut
+			width: 100%
+			.itmcont
+				text-align: center
+				width: 100%
+	.contswrap .box-content .tofa .two-factor .factoryaut .itmcont input
+		width: 100%
+	.contswrap .box-content .tofa .app-title .titleapp
+		max-width: 100%
+	.itemauth
+		max-width: 386px	
+		width: 100%
+
+
++media-breakpoint-down(xs)	
+	.butapp
+		width: 140px
+		height: 60px
+		img
+			width: 100%
+// 2fa end		
+
+@import "media" // Always at the end
+
+
+
+
+
+	

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="345" height="153" viewBox="0 0 345 153">
+    <defs>
+        <style>
+            .cls-1,.cls-3,.cls-4{fill:#fff}.cls-1{font-size:23px;font-family:Times-Bold,Times}.cls-1,.cls-3{font-weight:700;letter-spacing:-.05em}.cls-2,.cls-3{font-family:MyanmarMN-Bold,Myanmar MN}.cls-3{font-size:35px}.cls-5,.cls-7{fill:none}.cls-5{stroke:#fff}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_3197" data-name="Group 3197" transform="translate(-1250 -3276)">
+        <text id="Загрузите_в" class="cls-1" data-name="Загрузите в" transform="translate(1422 3342)">
+            <tspan x="-54.518" y="0">Загрузите</tspan><tspan y="0" class="cls-2"> </tspan><tspan y="0">в</tspan>
+        </text>
+        <text id="Google_Play" class="cls-3" data-name="Google Play" transform="translate(1460 3376)">
+            <tspan x="-93.276" y="0">Google Play</tspan>
+        </text>
+        <g id="Group_3196" data-name="Group 3196" transform="translate(-6 -441)">
+            <g id="g48" transform="translate(1305.106 3768.664)">
+                <path id="path64" d="M217.468 253.878a4 4 0 0 0-.95 2.847v44.8a4.011 4.011 0 0 0 .95 2.85l.15.136 25.4-25.092v-.593l-25.4-25.092z" class="cls-4" transform="translate(-216.518 -253.73)"/>
+            </g>
+            <g id="g66" transform="translate(1336.715 3787.755)">
+                <path id="path78" d="M268.082 295.326l-5.614-6.082v-.431l5.621-6.082.126.08 6.658 4.1c1.9 1.163 1.9 3.077 0 4.248l-6.658 4.091z" class="cls-4" transform="translate(-262.468 -282.731)"/>
+            </g>
+            <g id="g80" transform="translate(1315.439 3796.053)">
+                <path id="path88" d="M243.011 303.973l-6.288-6.215-22.557 22.342c.036-.025 5.816-3.2 28.845-16.127" class="cls-4" transform="translate(-218.166 -297.758)"/>
+            </g>
+            <g id="g90" transform="translate(1315.439 3773)">
+                <path id="path104" d="M243.187 265.384c-23.192-13.016-29-16.195-29.021-16.206l22.689 22.464z" class="cls-4" transform="translate(-218.166 -252.59)"/>
+            </g>
+        </g>
+        <g id="Rectangle_1063" class="cls-5" data-name="Rectangle 1063" transform="translate(1250 3276)">
+            <rect width="345" height="153" class="cls-6" rx="26"/>
+            <rect width="344" height="152" x=".5" y=".5" class="cls-7" rx="25.5"/>
+        </g>
+    </g>
+</svg>

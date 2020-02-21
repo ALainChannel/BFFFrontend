@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="90" viewBox="0 0 216 90">
+    <defs>
+        <style>
+            .cls-1{fill:#371f18}.cls-2,.cls-4{fill:#fff}.cls-2,.cls-3{font-size:25px;font-family:MyanmarMN,Myanmar MN}.cls-3{fill:#a58a73;font-size:19px}.cls-5{filter:url(#Rectangle_1704)}
+        </style>
+        <filter id="Rectangle_1704" width="216" height="90" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_3536" data-name="Group 3536" transform="translate(-1541 -232)">
+        <g class="cls-5" transform="translate(1541 232)">
+            <rect id="Rectangle_1704-2" width="198" height="72" class="cls-1" data-name="Rectangle 1704" rx="6" transform="translate(9 6)"/>
+        </g>
+        <text id="Play_Market" class="cls-2" data-name="Play Market" transform="translate(1605 293)">
+            <tspan x="0" y="0">Play Market</tspan>
+        </text>
+        <text id="Download_in" class="cls-3" data-name="Download in" transform="translate(1604 266)">
+            <tspan x="0" y="0">Download in</tspan>
+        </text>
+        <g id="Group_3196" data-name="Group 3196" transform="translate(259 -3513.664)">
+            <g id="g48" transform="translate(1305.106 3768.664)">
+                <path id="path64" d="M217.211 253.838a2.918 2.918 0 0 0-.693 2.075v32.643a2.923 2.923 0 0 0 .693 2.077l.109.1 18.507-18.284v-.432L217.32 253.73z" class="cls-4" transform="translate(-216.518 -253.73)"/>
+            </g>
+            <g id="g66" transform="translate(1328.138 3782.575)">
+                <path id="path78" d="M266.559 291.908l-4.091-4.431v-.314l4.1-4.432.092.058 4.851 2.986a1.673 1.673 0 0 1 0 3.1l-4.851 2.981z" class="cls-4" transform="translate(-262.468 -282.731)"/>
+            </g>
+            <g id="g80" transform="translate(1309.721 3788.621)">
+                <path id="path88" d="M235.184 302.286l-4.581-4.528-16.437 16.28c.026-.018 4.238-2.329 21.018-11.751" class="cls-4" transform="translate(-214.166 -297.758)"/>
+            </g>
+            <g id="g90" transform="translate(1309.721 3769.338)">
+                <path id="path104" d="M235.312 260.987c-16.9-9.484-21.134-11.8-21.146-11.808l16.534 16.369z" class="cls-4" transform="translate(-214.166 -249.179)"/>
+            </g>
+        </g>
+    </g>
+</svg>

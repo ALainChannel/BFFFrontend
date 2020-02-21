@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 420.279 420.279">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3,.cls-5{fill:none}.cls-1{stroke:#f8d496}.cls-1,.cls-2,.cls-3{stroke-linecap:round;stroke-width:18px}.cls-1,.cls-2{stroke-dasharray:269 1000}.cls-2{stroke:#f9b034}.cls-3{stroke:#7d4516;stroke-dasharray:281 1000}.cls-5{stroke:none}.cls-6{filter:url(#Ellipse_99)}.cls-7{filter:url(#Ellipse_98)}.cls-8{filter:url(#Ellipse_100)}
+        </style>
+        <filter id="Ellipse_100" width="390.082" height="390.081" x="15.098" y="15.098" filterUnits="userSpaceOnUse">
+            <feOffset dx="6" dy="6"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".255"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_98" width="343.279" height="343.279" x="38.498" y="38.5" filterUnits="userSpaceOnUse">
+            <feOffset dx="6" dy="6"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".255"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_99" width="420.279" height="420.279" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="6" dy="6"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".255"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_3549" data-name="Group 3549" >
+        <g class="cls-8" transform="translate(-.001)">
+            <g id="Ellipse_100-2" class="cls-1" data-name="Ellipse 100" stroke-dasharray="3 1" transform="matrix(-.36 -.93 .93 -.36 121.31 390.18)">
+                <circle cx="144" cy="144" r="144" class="cls-4"/>
+                <circle cx="144" cy="144" r="135" class="cls-5"/>
+            </g>
+        </g>
+        <g class="cls-7" transform="translate(-.001)">
+            <g id="Ellipse_98-2" class="cls-2" data-name="Ellipse 98" transform="rotate(8 -255.949 604.074)">
+                <circle cx="144" cy="144" r="144" class="cls-4"/>
+                <circle cx="144" cy="144" r="135" class="cls-5"/>
+            </g>
+        </g>
+        <g class="cls-6" transform="translate(-.001)">
+            <g id="Ellipse_99-2" class="cls-3" data-name="Ellipse 99" transform="rotate(126.2 158.548 189.122)">
+                <circle cx="144" cy="144" r="144" class="cls-4"/>
+                <circle cx="144" cy="144" r="135" class="cls-5"/>
+            </g>
+        </g>
+    </g>
+</svg>

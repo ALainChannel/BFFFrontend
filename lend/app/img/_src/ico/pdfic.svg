@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-1{fill:#2d191a}
+        </style>
+    </defs>
+    <g id="ic_picture_as_pdf_48px" transform="translate(-4 -4)">
+        <path id="Path_4745" d="M40 4H16a4 4 0 0 0-4 4v24a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4zM23 19a3 3 0 0 1-3 3h-2v4h-3V14h5a3 3 0 0 1 3 3zm10 4a3 3 0 0 1-3 3h-5V14h5a3 3 0 0 1 3 3zm8-6h-3v2h3v3h-3v4h-3V14h6zm-23 2h2v-2h-2zM8 12H4v28a4 4 0 0 0 4 4h28v-4H8zm20 11h2v-6h-2z" class="cls-1" data-name="Path 4745"/>
+    </g>
+</svg>

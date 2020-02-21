@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.377" height="10.372" viewBox="0 0 10.377 10.372">
+    <defs>
+        <style>
+            .cls-1{fill:#7d4516}
+        </style>
+    </defs>
+    <g id="square-upload" transform="translate(-1 -1.02)">
+        <path id="Path_912" d="M1.226 35a.226.226 0 0 0-.226.226v2.256a.226.226 0 0 0 .226.226h9.926a.226.226 0 0 0 .226-.226v-2.256a.226.226 0 1 0-.451 0v2.03H1.451v-2.03A.226.226 0 0 0 1.226 35z" class="cls-1" data-name="Path 912" transform="translate(0 -26.314)"/>
+        <path id="Path_913" d="M14.884 1.1a.233.233 0 0 0-.355 0l-2.481 3.16a.226.226 0 0 0 .177.365h2.03v4.737a.226.226 0 0 0 .226.226h.451a.226.226 0 0 0 .226-.226V4.625h2.03a.226.226 0 0 0 .177-.365z" class="cls-1" data-name="Path 913" transform="translate(-8.519)"/>
+    </g>
+</svg>
