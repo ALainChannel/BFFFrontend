@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="496.089" height="491" viewBox="0 0 496.089 491">
+    <defs>
+        <filter id="prefix__Path_6018" width="29.183" height="35.634" x="233.453" y="8.381" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6021" width="38.863" height="36.501" x="419.335" y="118.061" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6023" width="38.863" height="36.502" x="419.335" y="338.289" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6025" width="57.678" height="60.364" x="329.097" y="406.582" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-4" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6027" width="57.678" height="60.364" x="109.314" y="406.582" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-5" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-5" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6029" width="56.522" height="49.183" x="0" y="221.835" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-6" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-6" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6019" width="29.183" height="35.634" x="233.453" y="448.836" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-7" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur-7" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6020" width="38.863" height="36.502" x="37.89" y="338.289" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-8" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur-8" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6022" width="38.863" height="36.502" x="37.89" y="118.061" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-9" stdDeviation="3"/>
+            <feFlood flood-opacity=".561"/>
+            <feComposite in2="blur-9" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6024" width="57.678" height="60.364" x="109.314" y="25.906" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-10" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-10" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6026" width="57.678" height="60.364" x="329.097" y="25.906" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-11" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-11" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Path_6028" width="56.522" height="49.183" x="439.566" y="221.835" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-12" stdDeviation="6"/>
+            <feFlood flood-opacity=".557"/>
+            <feComposite in2="blur-12" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="prefix__radial-gradient" cx=".5" cy="1" r=".69" gradientTransform="matrix(.625 0 0 1 .188 0)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#d32626"/>
+            <stop offset="1" stop-color="#720707"/>
+        </radialGradient>
+        <style>
+            .prefix__cls-1{fill:#fff}.prefix__cls-2{fill:url(#prefix__radial-gradient)}.prefix__cls-3{fill:#ffc767}.prefix__cls-4,.prefix__cls-5{stroke:none}.prefix__cls-5{fill:rgba(255,197,100,.33)}
+        </style>
+    </defs>
+    <g id="prefix__Group_3748" data-name="Group 3748" transform="translate(2.001 -.455)">
+        <g id="prefix__Group_3737" data-name="Group 3737">
+            <path id="prefix__Polygon_3" d="M64 0l64 245H0z" class="prefix__cls-1" data-name="Polygon 3" transform="rotate(180 154.863 122.728)"/>
+            <path id="prefix__Polygon_6" d="M64 0l64 246H0z" class="prefix__cls-2" data-name="Polygon 6" transform="rotate(-90 277.591 31.864)"/>
+            <path id="prefix__Polygon_8" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-2" data-name="Polygon 8" transform="rotate(-30 613.465 -215.99)"/>
+            <path id="prefix__Polygon_10" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-1" data-name="Polygon 10" transform="rotate(-60 367.738 -34.399)"/>
+            <path id="prefix__Polygon_12" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-2" data-name="Polygon 12" transform="rotate(-150 187.853 98.535)"/>
+            <path id="prefix__Polygon_14" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-1" data-name="Polygon 14" transform="rotate(60 -57.875 280.126)"/>
+            <path id="prefix__Polygon_4" d="M64 0l64 246H0z" class="prefix__cls-1" data-name="Polygon 4" transform="translate(181.727 245.455)"/>
+            <path id="prefix__Polygon_5" d="M64 0l64 246H0z" class="prefix__cls-2" data-name="Polygon 5" transform="rotate(90 32.136 213.591)"/>
+            <path id="prefix__Polygon_7" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-2" data-name="Polygon 7" transform="rotate(150 122.01 147.192)"/>
+            <path id="prefix__Polygon_9" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-1" data-name="Polygon 9" transform="rotate(120 83.996 175.285)"/>
+            <path id="prefix__Polygon_11" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-2" data-name="Polygon 11" transform="rotate(30 -303.601 461.718)"/>
+            <path id="prefix__Polygon_13" d="M64.136 0l64.136 245.727H0z" class="prefix__cls-1" data-name="Polygon 13" transform="rotate(-120 225.867 70.443)"/>
+        </g>
+        <g id="prefix__Group_3742" data-name="Group 3742">
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6018-2" d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-2" data-name="Path 6018" transform="translate(242.45 14.38)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6021-2" d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-2" data-name="Path 6021" transform="rotate(60 114.366 446.208)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6023-2" d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-2" data-name="Path 6023" transform="rotate(120 122.666 306.228)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6025-2" class="prefix__cls-3" data-name="Path 6025">
+                    <path d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-4" transform="rotate(150 124.891 268.719)"/>
+                    <path d="M5.591 0C2.503 0 0 2.503 0 5.591s5.591 12.043 5.591 12.043 5.592-8.955 5.592-12.043C11.183 2.503 8.679 0 5.59 0m0-1c3.635 0 6.592 2.957 6.592 6.591 0 1.467-.953 3.97-2.913 7.65-1.398 2.625-2.773 4.83-2.83 4.923l-.849 1.358-.848-1.358c-.058-.093-1.432-2.298-2.83-4.923C-.047 9.56-1 7.058-1 5.59-1 1.957 1.957-1 5.591-1z" class="prefix__cls-5" transform="rotate(150 124.891 268.719)"/>
+                </g>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6027-2" class="prefix__cls-3" data-name="Path 6027">
+                    <path d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-4" transform="rotate(-150 128.742 203.753)"/>
+                    <path d="M5.591 0C2.503 0 0 2.503 0 5.591s5.591 12.043 5.591 12.043 5.592-8.955 5.592-12.043C11.183 2.503 8.679 0 5.59 0m0-1c3.635 0 6.592 2.957 6.592 6.591 0 1.467-.953 3.97-2.913 7.65-1.398 2.625-2.773 4.83-2.83 4.923l-.849 1.358-.848-1.358c-.058-.093-1.432-2.298-2.83-4.923C-.047 9.56-1 7.058-1 5.59-1 1.957 1.957-1 5.591-1z" class="prefix__cls-5" transform="rotate(-150 128.742 203.753)"/>
+                </g>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6029-2" class="prefix__cls-3" data-name="Path 6029">
+                    <path d="M5.591 0a5.591 5.591 0 0 1 5.591 5.591c0 3.088-5.591 12.043-5.591 12.043S0 8.679 0 5.591A5.591 5.591 0 0 1 5.591 0z" class="prefix__cls-4" transform="rotate(-90 134.01 115.01)"/>
+                    <path d="M5.591 0C2.503 0 0 2.503 0 5.591s5.591 12.043 5.591 12.043 5.592-8.955 5.592-12.043C11.183 2.503 8.679 0 5.59 0m0-1c3.635 0 6.592 2.957 6.592 6.591 0 1.467-.953 3.97-2.913 7.65-1.398 2.625-2.773 4.83-2.83 4.923l-.849 1.358-.848-1.358c-.058-.093-1.432-2.298-2.83-4.923C-.047 9.56-1 7.058-1 5.59-1 1.957 1.957-1 5.591-1z" class="prefix__cls-5" transform="rotate(-90 134.01 115.01)"/>
+                </g>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6019-2" d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-2" data-name="Path 6019" transform="translate(242.45 454.84)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6020-2" d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-2" data-name="Path 6020" transform="rotate(60 -267.084 225.977)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <path id="prefix__Path_6022-2" d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-2" data-name="Path 6022" transform="rotate(120 -4.484 85.998)"/>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6024-2" class="prefix__cls-3" data-name="Path 6024">
+                    <path d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-4" transform="rotate(150 65.881 48.488)"/>
+                    <path d="M5.591 17.634c3.088 0 5.592-2.503 5.592-5.591S5.59 0 5.59 0 0 8.955 0 12.043c0 3.088 2.503 5.591 5.591 5.591m0 1C1.957 18.634-1 15.677-1 12.043c0-1.467.953-3.969 2.913-7.65C3.311 1.768 4.685-.437 4.743-.53l.848-1.358L6.44-.53c.057.093 1.432 2.298 2.83 4.923 1.96 3.681 2.913 6.183 2.913 7.65 0 3.634-2.957 6.591-6.592 6.591z" class="prefix__cls-5" transform="rotate(150 65.881 48.488)"/>
+                </g>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6026-2" class="prefix__cls-3" data-name="Path 6026">
+                    <path d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-4" transform="rotate(-150 187.754 -16.472)"/>
+                    <path d="M5.591 17.634c3.088 0 5.592-2.503 5.592-5.591S5.59 0 5.59 0 0 8.955 0 12.043c0 3.088 2.503 5.591 5.591 5.591m0 1C1.957 18.634-1 15.677-1 12.043c0-1.467.953-3.969 2.913-7.65C3.311 1.768 4.685-.437 4.743-.53l.848-1.358L6.44-.53c.057.093 1.432 2.298 2.83 4.923 1.96 3.681 2.913 6.183 2.913 7.65 0 3.634-2.957 6.591-6.592 6.591z" class="prefix__cls-5" transform="rotate(-150 187.754 -16.472)"/>
+                </g>
+            </g>
+            <g transform="translate(16.999 14.836) translate(-19 -14.38)">
+                <g id="prefix__Path_6028-2" class="prefix__cls-3" data-name="Path 6028">
+                    <path d="M5.591 17.634a5.591 5.591 0 0 0 5.591-5.591C11.183 8.955 5.591 0 5.591 0S0 8.955 0 12.043a5.591 5.591 0 0 0 5.591 5.591z" class="prefix__cls-4" transform="rotate(-90 354.235 -105.215)"/>
+                    <path d="M5.591 17.634c3.088 0 5.592-2.503 5.592-5.591S5.59 0 5.59 0 0 8.955 0 12.043c0 3.088 2.503 5.591 5.591 5.591m0 1C1.957 18.634-1 15.677-1 12.043c0-1.467.953-3.969 2.913-7.65C3.311 1.768 4.685-.437 4.743-.53l.848-1.358L6.44-.53c.057.093 1.432 2.298 2.83 4.923 1.96 3.681 2.913 6.183 2.913 7.65 0 3.634-2.957 6.591-6.592 6.591z" class="prefix__cls-5" transform="rotate(-90 354.235 -105.215)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
